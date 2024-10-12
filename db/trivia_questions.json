@@ -1,0 +1,90 @@
+[
+    {
+        "content":"Which film won the Academy Award for Best Picture in 2020?",
+        "option1":"1917",
+        "option2":"Joker",
+        "option3":"Parasite",
+        "option4":"Ford v Ferrari",
+        "solution":"Parasite"
+    },
+    {
+        "content":"Who played the character of Arthur Fleck in the 2019 film Joker?",
+        "option1":"Heath Ledger",
+        "option2":"Jared Leto",
+        "option3":"Joaquin Phoenix",
+        "option4":"Leonardo DiCaprio",
+        "solution":"Joaquin Phoenix"
+    },
+    {
+        "content":"In Stranger Things, what is the name of the small town where the show is set?",
+        "option1":"Hawkins",
+        "option2":"Riverdale",
+        "option3":"Derry",
+        "option4":"Beacon Hills",
+        "solution":"Hawkins"
+    },
+    {
+        "content":"Which movie is the fourth installment of the Mission: Impossible series released in 2011?",
+        "option1":"Mission: Impossible - Rogue Nation",
+        "option2":"Mission: Impossible - Ghost Protocol",
+        "option3":"Mission: Impossible - Fallout",
+        "option4":"Mission: Impossible - Dead Reckoning",
+        "solution":"Mission: Impossible - Ghost Protocol"
+    },
+    {
+        "content":"In The Mandalorian, what is the name of the child traveling with the Mandalorian?",
+        "option1":"Yaddle",
+        "option2":"Yoda Jr.",
+        "option3":"Grogu",
+        "option4":"Baby Yoda",
+        "solution":"Grodu"
+    },
+    {
+        "content":"Which actor played the lead role in the movie Ford v Ferrari?",
+        "option1":"Christian Bale",
+        "option2":"Matt Damon",
+        "option3":"Robert Downey Jr",
+        "option4":"Brad Pitt",
+        "solution":"Christian Bale"
+    },
+    {
+        "content":"In The Queen's Gambit, what is Beth Harmon’s main talent?",
+        "option1":"Painting",
+        "option2":"Chess",
+        "option3":"Piano",
+        "option4":"Writing",
+        "solution":"Chess"
+    },
+    {
+        "content":"What is the name of the time-bending film directed by Christopher Nolan that was released in 2020?",
+        "option1":"Inception",
+        "option2":"Tenet",
+        "option3":"Interstellar",
+        "option4":"Dunkirk",
+        "solution":"Tenet"
+    },
+    {
+        "content":"Which series features the character of Geralt of Rivia?",
+        "option1":"Shadow and Bone",
+        "option2":"The Witcher",
+        "option3":"His Dark Materials",
+        "option4":"The Expanse",
+        "solution":"The Witcher"
+    },
+    {
+        "content":"In The Boys, what is the name of the superhero group that the main characters oppose?",
+        "option1":"The Justice League",
+        "option2":"The Guardians",
+        "option3":"The Seven",
+        "option4":"The Guardians of the Globe",
+        "solution":""
+    },
+    {
+        "content":"In the series Breaking Bad, what is the street name of the blue methamphetamine produced by Walter White?",
+        "option1":"Blue Sky",
+        "option2":"Blue Ice",
+        "option3":"Crystal Blue",
+        "option4":"Blue Magic",
+        "solution":"Blue Sky"
+    }
+]
