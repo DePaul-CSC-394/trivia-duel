@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require 'json'
+
+file = File.read(Rails.root.join('db', 'trivia_questions.json'))
+questions = JSON.parse(file)
+
+questions.each do |question_data|
+    Question.create!(question_data)
+end
