@@ -13,5 +13,12 @@ file = File.read(Rails.root.join('db', 'trivia_questions.json'))
 questions = JSON.parse(file)
 
 questions.each do |question_data|
-    Question.create!(question_data)
+    Question.find_or_create_by!(
+        content: question_data['content'],
+        option1: question_data['option1'],
+        option2: question_data['option2'],
+        option3: question_data['option3'],
+        option4: question_data['option4'],
+        solution: question_data['solution']
+    )
 end

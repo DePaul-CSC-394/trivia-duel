@@ -1,0 +1,24 @@
+<div class="container">
+  <h2><%= @question.content %></h2>
+
+  <div class="options">
+
+    <div>
+      <button>A. <%= @question.option1 %></button>
+      <button>B. <%= @question.option2 %></button>
+    </div>
+
+    <div>
+      <button>C. <%= @question.option3 %></button>
+      <button>D. <%= @question.option4 %></button>
+    </div>
+  </div>
+
+
+    <p>Player 1: Press 'A' to buzz in</p>
+    <p>Player 2: Press 'L' to buzz in</p>
+
+    <div id="result"></div>
+
+    <%= javascript_include_tag 'buzzer' %>
+</div>
