@@ -4,21 +4,23 @@
   <div class="options">
 
     <div>
-      <button>A. <%= @question.option1 %></button>
-      <button>B. <%= @question.option2 %></button>
+      <button class="option-button" data-answer="<%= @question.option1 %>">A.  <%= @question.option1 %></button>
+      <button class="option-button" data-answer="<%= @question.option2 %>">B. <%= @question.option2 %></button>
     </div>
 
     <div>
-      <button>C. <%= @question.option3 %></button>
-      <button>D. <%= @question.option4 %></button>
+      <button class="option-button" data-answer="<%= @question.option3 %>">C. <%= @question.option3 %></button>
+      <button class="option-button" data-answer="<%= @question.option4 %>">D. <%= @question.option4 %></button>
     </div>
   </div>
 
+  <input type="hidden" id="correct-answer" value="<%= @question.solution %>">
 
-    <p>Player 1: Press 'A' to buzz in</p>
-    <p>Player 2: Press 'L' to buzz in</p>
 
-    <div id="result"></div>
+  <p>Player 1: Press 'A' to buzz in</p>
+  <p>Player 2: Press 'L' to buzz in</p>
 
-    <%= javascript_include_tag 'buzzer' %>
+  <div id="result"></div>
+
+  <%= javascript_include_tag 'game' %>
 </div>
