@@ -182,5 +182,77 @@
         "option3":"The Departed",
         "option4":"Body of Lies",
         "solution":"Blood Diamond"
-    }
+    },
+    {
+        "content":"In The Princess Bride, what is the name of the poison that Vizzni and Westley use during their battle of wits?",
+        "option1":"Dragonroot",
+        "option2":"Belladonna",
+        "option3":"Iocane Powder",
+        "option4":"Nightshade",
+        "solution":"Iocane Powder"
+    },
+    {
+        "content":"In No Country For Old Men (2007), what is the weapon of choice for the character Anton Chigurh?",
+        "option1":"Knife",
+        "option2":"Shotgun",
+        "option3":"Bolt gun",
+        "option4":"Revolver",
+        "solution":"Bolt gun"
+    },
+    {
+        "content":"In The Office (U.S.), what is the name of the company that buys out Dunder Miflin in the later seasons?",
+        "option1":"Sabre",
+        "option2":"Utica Paper",
+        "option3":"Stamford Inc.",
+        "option4":"Prince Paper",
+        "solution":"Sabre"
+    },
+    {
+        "content":"In Interstellar (2014), what is the name of the robot that assists Cooper and his crew on their mission?",
+        "option1":"HAL",
+        "option2":"TARS",
+        "option3":"KIPP",
+        "option4":"GERTY",
+        "solution":"TARS"
+    },
+    {
+        "content":"In Avatar (2009), what is the name of the valuable mineral that humans are mining on Pandora?",
+        "option1":"Naivium",
+        "option2":"Pandorium",
+        "option3":"Unobtainium",
+        "option4":"Adamantium",
+        "solution":"Unobtainium"
+    },
+    {
+        "content":"In The Walking Dead, what is the name of the town that Rick and his group establish as their base of operations?",
+        "option1":"Woodbury",
+        "option2":"Alexandria",
+        "option3":"Hilltop",
+        "option4":"Sanctuary",
+        "solution":"Alexandria"
+    },
+    {
+        "content":"In Harry Potter and the Half-Blood Prince (2009), what potion does Professor Slughorn give to Harry as a reward for brewing the best potion in class?",
+        "option1":"Felix Felicis",
+        "option2":"Amortentia",
+        "option3":"Polyjuice Potion",
+        "option4":"Veritaserum",
+        "solution":"Felix Felicis"
+    },
+    {
+        "content":"In Inglourious Basterds (2009), what is the name of the German war hero whose premiere Shosanna plans to sabotage?",
+        "option1":"Hans Landa",
+        "option2":"Wilhelm Wicki",
+        "option3":"Frederick Zoller",
+        "option4":"Hugo Stiglitz",
+        "solution":"Frederick Zoller"
+    },
+{
+    "content":"In The Legend of Korra, what is the name of the main antagonist of season 3 - 'Book Three: Change'?",
+    "option1":"Zaheer",
+    "option2":"Amon",
+    "option3":"Kuvira",
+    "option4":"Unalaq",
+    "solution":"Zaheer"
+}
 ]
