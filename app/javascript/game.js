@@ -4,9 +4,17 @@ let isAnswered = false;
 let chanceToSteal = false;
 let answerAttempts = 0;
 let questionTimerInterval = null;
+let player1Score = 0;
+let player2Score = 0;
+let gameOver = false;
+
+function updateScoreDisplay() {
+    document.getElementById('player1-score').textContent = 'Player 1 Score: ' + player1Score;
+    document.getElementById('player2-score').textContent = 'Player 2 Score: ' + player2Score;
+}
 
 document.addEventListener('keydown', function(event) {
-    if (currentPlayer === null) {
+    if (currentPlayer === null && (event.key === 'a' || event.key === 'A' || event.key === 'l' || event.key === 'L')) {
         if (event.key === 'a' || event.key === 'A') {
             questionTimer()
             currentPlayer = 'Player 1';
@@ -17,9 +25,7 @@ document.addEventListener('keydown', function(event) {
             otherPlayer = 'Player 1';
         }
 
-        if (result) {
-            document.getElementById('result').textContent = currentPlayer + ' buzzed in!';
-        }
+        document.getElementById('result').textContent = currentPlayer + ' buzzed in!';
     }
 });
 
@@ -30,14 +36,24 @@ function checkAnswer(selectedOption) {
         if (selectedOption === correctAnswer) {
             document.getElementById('result').textContent = currentPlayer + ' answered correctly!';
             isAnswered = true;
-            document.getElementById('steal').textContent = '';
-            questionCountdown();
+            if (currentPlayer === 'Player 1') {
+                player1Score++;
+            } else if (currentPlayer === 'Player 2') {
+                player2Score++;
+            }
+
+            updateScoreDisplay();
+            if (player1Score === 10 || player2Score === 10) {
+                declareWinner(currentPlayer);
+            } else {
+                questionCountdown();
+            }
         } else {
-            document.getElementById('result').textContent = currentPlayer + ' answered incorrectly! ';
+            document.getElementById('result').textContent = currentPlayer + ' answered incorrectly!';
             answerAttempts++;
-            if(answerAttempts < 2){
+            if (answerAttempts < 2) {
                 stealQuestion();
-            } else{
+            } else {
                 document.getElementById('steal').textContent = '';
                 questionCountdown();
             }
@@ -45,8 +61,15 @@ function checkAnswer(selectedOption) {
     }
 }
 
-function stealQuestion(){
-    if(!chanceToSteal && answerAttempts < 2){
+function declareWinner(winner) {
+    gameOver = true;
+    document.getElementById('result').textContent = winner + ' wins the game!';
+    clearInterval(questionTimerInterval);
+}
+
+
+function stealQuestion() {
+    if (!chanceToSteal && answerAttempts < 2) {
         chanceToSteal = true;
         document.getElementById('steal').textContent = otherPlayer + ' can steal!';
         [currentPlayer, otherPlayer] = [otherPlayer, currentPlayer];
@@ -55,20 +78,24 @@ function stealQuestion(){
         answerAttempts++;
     } else {
         document.getElementById('steal').textContent = '';
-        document.getElementById('result').textContent = currentPlayer + ' did not answer in time! ';
+        document.getElementById('result').textContent = currentPlayer + ' did not answer in time!';
         questionCountdown();
     }
 }
 
-function questionCountdown(){
+function questionCountdown() {
     let countdown = 3;
-    document.getElementById('countdown').textContent = "";
+    document.getElementById('countdown').textContent = '';
     const countdownInterval = setInterval(() => {
-        document.getElementById('countdown').textContent = "Question in " + countdown + "..."
-        countdown--;
-        if(countdown < 0){
+        if (gameOver) {
             clearInterval(countdownInterval);
-            resetRound();
+            return;
+        }
+        document.getElementById('countdown').textContent = "Next question in " + countdown + "...";
+        countdown--;
+        if (countdown < 0) {
+            clearInterval(countdownInterval);
+            loadNewQuestion();
         }
     }, 1000);
 }
@@ -76,7 +103,7 @@ function questionCountdown(){
 function questionTimer() {
     clearInterval(questionTimerInterval);
     let countdown = 10;
-    document.getElementById('countdown').textContent = "";
+    document.getElementById('countdown').textContent = '';
     questionTimerInterval = setInterval(() => {
         if (isAnswered) {
             clearInterval(questionTimerInterval);
@@ -92,19 +119,45 @@ function questionTimer() {
         }
     }, 1000);
 }
+function resetRound() {
+    document.getElementById('result').textContent = '';
+    document.getElementById('countdown').textContent = '';
+    document.getElementById('steal').textContent = '';
 
-function resetRound(){
     clearInterval(questionTimerInterval);
     currentPlayer = null;
     otherPlayer = null;
     isAnswered = false;
     chanceToSteal = false;
-    document.getElementById('result').textContent = '';
     answerAttempts = 0;
-    document.getElementById('result').textContent = '';
-    document.getElementById('countdown').textContent = '';
-    document.getElementById('steal').textContent = '';
-    window.location.reload();
+}
+
+function loadNewQuestion() {
+    if (!gameOver) {
+        fetch('/questions/next', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.querySelector('h2').textContent = data.content;
+
+            const optionButtons = document.querySelectorAll('.option-button');
+            optionButtons[0].textContent = "A. " + data.option1;
+            optionButtons[0].setAttribute('data-answer', data.option1);
+            optionButtons[1].textContent = "B. " + data.option2;
+            optionButtons[1].setAttribute('data-answer', data.option2);
+            optionButtons[2].textContent = "C. " + data.option3;
+            optionButtons[2].setAttribute('data-answer', data.option3);
+            optionButtons[3].textContent = "D. " + data.option4;
+            optionButtons[3].setAttribute('data-answer', data.option4);
+
+            document.getElementById('correct-answer').value = data.solution;
+
+            resetRound();
+        })
+        .catch(error => console.error('Error fetching new question:', error));
+    }
 }
 
 document.querySelectorAll('.option-button').forEach(button => {
@@ -115,3 +168,6 @@ document.querySelectorAll('.option-button').forEach(button => {
         }
     });
 });
+
+startNewGame();
+updateScoreDisplay();
