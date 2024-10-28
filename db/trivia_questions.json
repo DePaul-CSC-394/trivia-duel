@@ -86,5 +86,101 @@
         "option3":"Crystal Blue",
         "option4":"Blue Magic",
         "solution":"Blue Sky"
+    },
+    {
+        "content":"In Blade Runner 2049 (2017), what is the name of the advanced AI hologram that Officer K is romantically involved with?",
+        "option1":"Joi",
+        "option2":"Nea",
+        "option3":"Luna",
+        "option4":"Ada",
+        "solution":"Joi"
+    },
+    {
+        "content":"In the movie The Revenant (2015), what is the name of the mountain man who betrays and leaves Hugh Glass for dead?",
+        "option1":"Bridger",
+        "option2":"Smith",
+        "option3":"Hawken",
+        "option4":"Fitzgerald",
+        "solution":"Fitzgerald"
+    },
+    {
+        "content":"Which film, directed by Denis Villeneuve, involves a linguist who tries to communicate with extraterrestrial beings?",
+        "option1":"Interstellar",
+        "option2":"Arrival",
+        "option3":"Prometheus",
+        "option4":"Annihilation",
+        "solution":"Arrival"
+    },
+    {
+        "content":"In Game of Thrones, who does Arya Stark first add to her kill list after escaping King's Landing?",
+        "option1":"Tywin Lannister",
+        "option2":"The Hound",
+        "option3":"Cersei Lannister",
+        "option4":"Ser Meryn Trant",
+        "solution":"Ser Meryn Trant"
+    },
+    {
+        "content":"Which character does Mahershala Ali portray in the TV series True Detective (Season 3)?",
+        "option1":"Rust Cohle",
+        "option2":"Wayne Hays",
+        "option3":"Tom Purcell",
+        "option4":"Martin Hart",
+        "solution":"Wayne Hays"
+    },
+    {
+        "content":"In Get Out (2017), what is the name of the procedure used by the Armitage family to transfer the consciousness of their friends into other bodies?",
+        "option1":"The Coagula",
+        "option2":"The Unification",
+        "option3":"The Ceremony",
+        "option4":"The Convergence",
+        "solution":"The Coagula"
+    },
+    {
+        "content":"In the John Wick series, what is the name of the hotel where assassins find refuge, overseen by the character Winston?",
+        "option1":"The Metropolitan",
+        "option2":"The Sanctum",
+        "option3":"The Continental",
+        "option4":"The Empire",
+        "solution":"The Continental"
+    },
+    {
+        "content":"In The Haunting of Hill House, what color is the infamous room that holds traumatic secrets for each member of the Crain family?",
+        "option1":"Red",
+        "option2":"Black",
+        "option3":"Blue",
+        "option4":"White",
+        "solution":"Red"
+    },
+    {
+        "content":"In The Social Network (2010), what is the name of the co-founder who sues Mark Zuckerberg for diluting his shares in Facebook?",
+        "option1":"Sean Parker",
+        "option2":"Eduardo Saverin",
+        "option3":"Cameron Winklevoss",
+        "option4":"Divya Narendra",
+        "solution":"Eduardo Saverin"
+    },
+    {
+        "content":"In Kill Bill, what is the code name of Uma Thurman’s character, also known as “The Bride”?",
+        "option1":"Cottonmouth",
+        "option2":"Black Mamba",
+        "option3":"Copperhead",
+        "option4":"Snake Charmer",
+        "solution":"Black Mamba"
+    },
+    {
+        "content":"Which 2000s war movie starring Tom Hanks and directed by Steven Spielberg won the Academy Award for Best Cinematography?",
+        "option1":"Saving Private Ryan",
+        "option2":"Band of Brothers",
+        "option3":"The Thin Red Line",
+        "option4":"Flags of Our Fathers",
+        "solution":"Saving Private Ryan"
+    },
+    {
+        "content":"Which 2006 film features Leonardo DiCaprio in a role as a diamond smuggler during a civil war in Sierra Leone?",
+        "option1":"Catch Me If You Can",
+        "option2":"Blood Diamond",
+        "option3":"The Departed",
+        "option4":"Body of Lies",
+        "solution":"Blood Diamond"
     }
 ]
