@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
     def next
-      questions_file = File.read(Rails.root.join('db', 'trivia_questions.json'))
+      questions_file = File.read(Rails.root.join("db", "trivia_questions.json"))
       questions = JSON.parse(questions_file)
       question = questions.sample
       render json: {
@@ -12,4 +12,4 @@ class QuestionsController < ApplicationController
         solution: question["solution"]
       }
     end
-  end
+end
