@@ -34,6 +34,7 @@ function checkAnswer(selectedOption) {
     if (!isAnswered) {
         clearInterval(questionTimerInterval);
         if (selectedOption === correctAnswer) {
+            document.getElementById('steal').textContent = '';
             document.getElementById('result').textContent = currentPlayer + ' answered correctly!';
             isAnswered = true;
             if (currentPlayer === 'Player 1') {
@@ -63,6 +64,9 @@ function checkAnswer(selectedOption) {
 
 function declareWinner(winner) {
     gameOver = true;
+    document.getElementById('result').textContent = '';
+    document.getElementById('countdown').textContent = '';
+    document.getElementById('steal').textContent = '';
     document.getElementById('result').textContent = winner + ' wins the game!';
     clearInterval(questionTimerInterval);
 }
@@ -160,6 +164,14 @@ function loadNewQuestion() {
     }
 }
 
+function skipQuestion(){
+    document.getElementById('result').textContent = 'Question skipped!';
+    document.getElementById('countdown').textContent = '';
+    document.getElementById('steal').textContent = '';
+    clearInterval(questionTimerInterval);
+    questionCountdown();
+ }
+ 
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
         if (currentPlayer !== null && !isAnswered) {
