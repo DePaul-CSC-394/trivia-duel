@@ -72,7 +72,6 @@ function declareWinner(winner) {
     clearInterval(questionTimerInterval);
 }
 
-
 function stealQuestion() {
     if (!chanceToSteal && answerAttempts < 2) {
         chanceToSteal = true;
@@ -124,6 +123,7 @@ function questionTimer() {
         }
     }, 1000);
 }
+
 function resetRound() {
     document.getElementById('result').textContent = '';
     document.getElementById('countdown').textContent = '';
@@ -177,7 +177,26 @@ function playBuzzerSoundEffect() {
     const buzzer = new Audio('/assets/buzzer1.mp3');
     buzzer.play();
 }
- 
+
+function startNewGame() {
+    player1Score = 0;
+    player2Score = 0;
+    gameOver = false;
+    currentPlayer = null;
+    otherPlayer = null;
+    isAnswered = false;
+    chanceToSteal = false;
+    answerAttempts = 0;
+    clearInterval(questionTimerInterval);
+
+    document.getElementById('result').textContent = '';
+    document.getElementById('countdown').textContent = '';
+    document.getElementById('steal').textContent = '';
+
+    updateScoreDisplay();
+    loadNewQuestion();
+}
+
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
         if (currentPlayer !== null && !isAnswered) {
