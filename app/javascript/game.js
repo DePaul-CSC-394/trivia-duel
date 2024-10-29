@@ -15,6 +15,7 @@ function updateScoreDisplay() {
 
 document.addEventListener('keydown', function(event) {
     if (currentPlayer === null && (event.key === 'a' || event.key === 'A' || event.key === 'l' || event.key === 'L')) {
+        playBuzzerSoundEffect();
         if (event.key === 'a' || event.key === 'A') {
             questionTimer()
             currentPlayer = 'Player 1';
@@ -170,7 +171,12 @@ function skipQuestion(){
     document.getElementById('steal').textContent = '';
     clearInterval(questionTimerInterval);
     questionCountdown();
- }
+}
+
+function playBuzzerSoundEffect() {
+    const buzzer = new Audio('/assets/buzzer1.mp3');
+    buzzer.play();
+}
  
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
