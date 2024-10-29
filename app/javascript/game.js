@@ -35,6 +35,7 @@ function checkAnswer(selectedOption) {
     if (!isAnswered) {
         clearInterval(questionTimerInterval);
         if (selectedOption === correctAnswer) {
+            playCorrectAnswerSoundEffect();
             document.getElementById('steal').textContent = '';
             document.getElementById('result').textContent = currentPlayer + ' answered correctly!';
             isAnswered = true;
@@ -177,6 +178,12 @@ function playBuzzerSoundEffect() {
     const buzzer = new Audio('/assets/buzzer1.mp3');
     buzzer.play();
 }
+
+function playCorrectAnswerSoundEffect() {
+    const correctSound = new Audio('/assets/chime.mp3');
+    correctSound.play();
+}
+
  
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
