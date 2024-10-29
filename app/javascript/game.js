@@ -73,7 +73,6 @@ function declareWinner(winner) {
     clearInterval(questionTimerInterval);
 }
 
-
 function stealQuestion() {
     if (!chanceToSteal && answerAttempts < 2) {
         chanceToSteal = true;
@@ -125,6 +124,7 @@ function questionTimer() {
         }
     }, 1000);
 }
+
 function resetRound() {
     document.getElementById('result').textContent = '';
     document.getElementById('countdown').textContent = '';
@@ -179,12 +179,34 @@ function playBuzzerSoundEffect() {
     buzzer.play();
 }
 
+<<<<<<< HEAD
+function startNewGame() {
+    player1Score = 0;
+    player2Score = 0;
+    gameOver = false;
+    currentPlayer = null;
+    otherPlayer = null;
+    isAnswered = false;
+    chanceToSteal = false;
+    answerAttempts = 0;
+    clearInterval(questionTimerInterval);
+
+    document.getElementById('result').textContent = '';
+    document.getElementById('countdown').textContent = '';
+    document.getElementById('steal').textContent = '';
+
+    updateScoreDisplay();
+    loadNewQuestion();
+}
+
+=======
 function playCorrectAnswerSoundEffect() {
     const correctSound = new Audio('/assets/chime.mp3');
     correctSound.play();
 }
 
  
+>>>>>>> 4dbcd8a6c9b6c9b6ca91b07f2979b5959456b04b
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
         if (currentPlayer !== null && !isAnswered) {
