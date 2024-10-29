@@ -278,13 +278,175 @@
         "option4":"Hugo Stiglitz",
         "solution":"Frederick Zoller"
     },
-{
-    "id": 32,
-    "content":"In The Legend of Korra, what is the name of the main antagonist of season 3 - 'Book Three: Change'?",
-    "option1":"Zaheer",
-    "option2":"Amon",
-    "option3":"Kuvira",
-    "option4":"Unalaq",
-    "solution":"Zaheer"
-}
+    {
+        "id": 32,
+        "content":"In The Legend of Korra, what is the name of the main antagonist of season 3 - 'Book Three: Change'?",
+        "option1":"Zaheer",
+        "option2":"Amon",
+        "option3":"Kuvira",
+        "option4":"Unalaq",
+        "solution":"Zaheer"
+    },
+    {
+        "id":33,
+        "content":"In The Matrix (1999), what is Neo's real name before he becomes 'The One'?",
+        "option1":"Thomas Anderson",
+        "option2":"John Doe",
+        "option3":"Elliot Anderson",
+        "option4":"David Roberts",
+        "solution":"Thomas Anderson"
+    },
+    {
+        "id":34,
+        "content":"In The Sixth Sense (1999), what profession does Dr. Malcolm Crowe practice?",
+        "option1":"Psychiatrist",
+        "option2":"Neurologist",
+        "option3":"General Surgeon",
+        "option4":"Social Worker",
+        "solution":"Psychiatrist"
+    },
+    {
+        "id":35,
+        "content":"In Alien: Resurrection (1997), what is Ellen Ripley’s clone number?",
+        "option1":"6",
+        "option2":"7",
+        "option3":"8",
+        "option4":"9",
+        "solution":"8"
+    },
+    {
+        "id":36,
+        "content":"In Toy Story (1995), who is Buzz Lightyear's arch-nemesis?",
+        "option1":"The Prospector",
+        "option2":"Sid",
+        "option3":"Stinky Pete",
+        "option4":"Emperor Zurg",
+        "solution":"Emperor Zurg"
+    },
+    {
+        "id":37,
+        "content":"In Fight Club (1999), what item does the Narrator hide in his suitcase, which causes suspicion at airport security?",
+        "option1":"A soap bar",
+        "option2":"A book titled 'Fight Club'",
+        "option3":"A suitcase bomb",
+        "option4":"A homemade bomb trigger",
+        "solution":"A soap bar"
+    },
+    {
+        "id":38,
+        "content":"In The Big Lebowski (1998), what is the full name of The Dude’s best friend, who is a Vietnam War veteran?",
+        "option1":"Walter Sobchak",
+        "option2":"Donny Kerabatsos",
+        "option3":"Jackie Treehorn",
+        "option4":"Jesus Quintana",
+        "solution":"Walter Sobchak"
+    },
+    {
+        "id":39,
+        "content":"In Titanic (1997), what deck does Jack Dawson sneak onto with his ticket?",
+        "option1":"C Deck",
+        "option2":"D Deck",
+        "option3":"E Deck",
+        "option4":"A Deck",
+        "solution":"C Deck"
+    },
+    {
+        "id":40,
+        "content":"In Star Wars: Episode I: The Phantom Menace (1999), who is Anakin’s mother?",
+        "option1":"Shmi Skywalker",
+        "option2":"Padmé Amidala",
+        "option3":"Satine Kryze",
+        "option4":"Beru Whitesun",
+        "solution":"Shmi Skywalker"
+    },
+    {
+        "id":41,
+        "content":"In Face/Off (1997), what type of weapon does Castor Troy’s brother specialize in?",
+        "option1":"Explosives",
+        "option2":"Knives",
+        "option3":"Sniper Rifles",
+        "option4":"Handguns",
+        "solution":"Explosives"
+    },
+    {
+        "id":42,
+        "content":"In Good Will Hunting (1997), what is Will's job at the beginning of the movie?",
+        "option1":"Construction Worker",
+        "option2":"Janitor",
+        "option3":"Bartender",
+        "option4":"Mechanic",
+        "solution":"Janitor"
+    },
+    {
+        "id":43,
+        "content":"In Jurassic Park (1993), what is the first dinosaur that Dr. Alan Grant and Dr. Ellie Sattler see when they arrive at the park?",
+        "option1":"Tyrannosaurus Rex",
+        "option2":"Velociraptor",
+        "option3":"Brachiosaurus",
+        "option4":"Triceratops",
+        "solution":"Brachiosaurus"
+    },
+    {
+        "id":44,
+        "content":"In Pulp Fiction (1994), what kind of burger does Jules describe as 'a tasty burger'?",
+        "option1":"McDonald's Big Mac",
+        "option2":"Jack in the Box Jumbo Jack",
+        "option3":"Big Kahuna Burger",
+        "option4":"Whopper",
+        "solution":"Big Kahuna Burger"
+    },
+    {
+        "id":45,
+        "content":"In The Shawshank Redemption (1994), what item does Andy Dufresne famously ask for to help tunnel his way out of prison?",
+        "option1":"A hammer",
+        "option2":"A spoon",
+        "option3":"A rock hammer",
+        "option4":"A knife",
+        "solution":"A rock hammer"
+    },
+    {
+        "id":46,
+        "content":"In Home Alone (1990), what nickname does Kevin give the two burglars, Harry and Marv?",
+        "option1":"The Sticky Bandits",
+        "option2":"The Wet Bandits",
+        "option3":"The Gruesome Twosome",
+        "option4":"The Robbery Brothers",
+        "solution":"The Wet Bandits"
+    },
+    {
+        "id":47,
+        "content":"In Schindler's List (1993), what color is the coat of the little girl seen during the liquidation of the Kraków ghetto?",
+        "option1":"Blue",
+        "option2":"Yellow",
+        "option3":"Red",
+        "option4":"Green",
+        "solution":"Red"
+    },
+    {
+        "id":48,
+        "content":"In The Silence of the Lambs (1991), what insect is found in the throat of one of Buffalo Bill's victims?",
+        "option1":"A locust",
+        "option2":"A death's-head hawk-moth",
+        "option3":"A spider",
+        "option4":"A butterfly",
+        "solution":"A death's-head hawk-moth"
+    },
+    {
+        "id":49,
+        "content":"In Forrest Gump (1994), which company does Forrest invest in that makes him wealthy?",
+        "option1":"Coca-Cola",
+        "option2":"Apple",
+        "option3":"Microsoft",
+        "option4":"IBM",
+        "solution":"Apple"
+    },
+    {
+        "id":50,
+        "content":"In Aladdin (1992), what is the first thing Aladdin wishes for from the Genie?",
+        "option1":"To become rich",
+        "option2":"To find Jasmine",
+        "option3":"To be set free",
+        "option4":"To be a prince",
+        "solution":"To be a prince"
+    }
 ]
