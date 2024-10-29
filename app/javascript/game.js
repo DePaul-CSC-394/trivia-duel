@@ -179,7 +179,6 @@ function playBuzzerSoundEffect() {
     buzzer.play();
 }
 
-<<<<<<< HEAD
 function startNewGame() {
     player1Score = 0;
     player2Score = 0;
@@ -199,14 +198,12 @@ function startNewGame() {
     loadNewQuestion();
 }
 
-=======
 function playCorrectAnswerSoundEffect() {
     const correctSound = new Audio('/assets/chime.mp3');
     correctSound.play();
 }
 
- 
->>>>>>> 4dbcd8a6c9b6c9b6ca91b07f2979b5959456b04b
+
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
         if (currentPlayer !== null && !isAnswered) {
