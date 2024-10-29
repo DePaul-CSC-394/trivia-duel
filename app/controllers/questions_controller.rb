@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
       questions = JSON.parse(questions_file)
       question = questions.sample
       render json: {
+        id: question["id"],
         content: question["content"],
         option1: question["option1"],
         option2: question["option2"],
