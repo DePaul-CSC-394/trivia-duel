@@ -55,6 +55,7 @@ function checkAnswer(selectedOption) {
                 questionCountdown();
             }
         } else {
+            playWrongAnswerSoundEffect();
             document.getElementById('result').textContent = currentPlayer + ' answered incorrectly!';
             answerAttempts++;
             disableAnswerButtons();
@@ -189,11 +190,6 @@ function skipQuestion(){
     questionCountdown();
 }
 
-function playBuzzerSoundEffect() {
-    const buzzer = new Audio('/assets/buzzer1.mp3');
-    buzzer.play();
-}
-
 function startNewGame() {
     player1Score = 0;
     player2Score = 0;
@@ -217,9 +213,17 @@ function startNewGame() {
     loadNewQuestion();
 }
 
+function playBuzzerSoundEffect() {
+    const buzzer = new Audio('/assets/bellding-254774.mp3');
+    buzzer.play();
+}
 function playCorrectAnswerSoundEffect() {
     const correctSound = new Audio('/assets/chime.mp3');
     correctSound.play();
+}
+function playWrongAnswerSoundEffect() {
+    const wrongSound = new Audio('/assets/negative_beeps-6008.mp3');
+    wrongSound.play();
 }
 
 
