@@ -727,5 +727,185 @@
         "option3":"Their accountant embezzled it",
         "option4":"They get caught distributing illegal contraband",
         "solution":"Their accountant embezzled it"
+    },
+    {
+        "id":81,
+        "content":"In The Truman Show (1998), what is the name of the town where Truman lives?",
+        "option1":"Sea Haven",
+        "option2":"Oceanview",
+        "option3":"Springfield",
+        "option4":"Seahorse Bay",
+        "solution":"Sea Haven"
+    },
+    {
+        "id":82,
+        "content":"Who was the first actor to portray the character Hannibal Lecter on screen?",
+        "option1":"Brian Cox",
+        "option2":"Anthony Hopkins",
+        "option3":"Mads Mikkelsen",
+        "option4":"Laurence Olivier",
+        "solution":"Brian Cox"
+    },
+    {
+        "id":83,
+        "content":"In Mad Men, what is the real name of the protagonist, Don Draper?",
+        "option1":"Richard Whitman",
+        "option2":"John Slater",
+        "option3":"Harold Higgins",
+        "option4":"Pete Campbell",
+        "solution":"Richard Whitman"
+    },
+    {
+        "id":84,
+        "content":"In The Sopranos, what animal does Tony see in the final season that he believes is a bad omen?",
+        "option1":"Cat",
+        "option2":"Crow",
+        "option3":"Owl",
+        "option4":"Dog",
+        "solution":"Cat"
+    },
+    {
+        "id":85,
+        "content":"In 2001: A Space Odyssey, what is the name of the Jupiter-bound spacecraft?",
+        "option1":"Discovery One",
+        "option2":"Voyager",
+        "option3":"Pioneer",
+        "option4":"Ares III",
+        "solution":"Discovery One"
+    },
+    {
+        "id":86,
+        "content":"In The Matrix, what is Neo told to follow to discover the truth?",
+        "option1":"White rabbit",
+        "option2":"Red pill",
+        "option3":"Blue bird",
+        "option4":"White feather",
+        "solution":"White rabbit"
+    },
+    {
+        "id":87,
+        "content":"What item does Indiana Jones seek in The Last Crusade to save his father?",
+        "option1":"The Ark",
+        "option2":"The Cross of Coronado",
+        "option3":"The Holy Grail",
+        "option4":"The Spear of Destiny",
+        "solution":"The Holy Grail"
+    },
+    {
+        "id":88,
+        "content":"In The Departed, what college is Matt Damon’s character affiliated with?",
+        "option1":"Boston University",
+        "option2":"University of Massachusetts",
+        "option3":"Suffolk University",
+        "option4":"Harvard",
+        "solution":"Suffolk University"
+    },
+    {
+        "id":89,
+        "content":"What is the first Marvel film in the MCU to introduce the Tesseract?",
+        "option1":"Thor",
+        "option2":"Captain America: The First Avenger",
+        "option3":"Iron Man 2",
+        "option4":"The Avengers",
+        "solution":"Captain America: The First Avenger"
+    },
+    {
+        "id":90,
+        "content":"In Westworld, what name does Dolores adopt as she begins her journey of rebellion?",
+        "option1":"Charlotte",
+        "option2":"Juliet",
+        "option3":"Wyatt",
+        "option4":"Athena",
+        "solution":"Wyatt"
+    },
+    {
+        "id":91,
+        "content":"In Finding Nemo, what type of fish is Dory?",
+        "option1":"Blue Tang",
+        "option2":"Yellow-finned Tang",
+        "option3":"Goldfish",
+        "option4":"Angelfish",
+        "solution":"Blue Tang"
+    },
+    {
+        "id":92,
+        "content":"What is the name of the hobbit played by Elijah Wood in The Lord of the Rings?",
+        "option1":"Frodo",
+        "option2":"Sam",
+        "option3":"Bilbo",
+        "option4":"Pippin",
+        "solution":"Frodo"
+    },
+    {
+        "id":93,
+        "content":"In 'Inception', what is the object called that each character uses to tell if they are in a dream?",
+        "option1":"Artifact",
+        "option2":"Charm",
+        "option3":"Totem",
+        "option4":"Memento",
+        "solution":"Totem"
+    },
+    {
+        "id":94,
+        "content":"What is the name of the actor who played Voldemort in the Harry Potter films?",
+        "option1":"Alan Rickman",
+        "option2":"Tom Felton",
+        "option3":"Ralph Fiennes",
+        "option4":"Gary Oldman",
+        "solution":"Ralph Fiennes"
+    },
+    {
+        "id":95,
+        "content":"What 1999 movie popularized the line, 'I see dead people'?",
+        "option1":"The Sixth Sense",
+        "option2":"The Others",
+        "option3":"Paranormal Activity",
+        "option4":"Stir of Echoes",
+        "solution":"The Sixth Sense"
+    },
+    {
+        "id":96,
+        "content":"What film was not parodied in Scary Movie (2000)?",
+        "option1":"The Exorcist",
+        "option2":"The Blair Witch Project",
+        "option3":"I Know What You Did Last Summer",
+        "option4":"Scream",
+        "solution":"The Exorcist"
+    },
+    {
+        "id":97,
+        "content":"In the Terminator franchise, what model number is Arnold Schwarzenegger’s character?",
+        "option1":"T-800",
+        "option2":"T-1000",
+        "option3":"T-500",
+        "option4":"T-X",
+        "solution":"T-800"
+    },
+    {
+        "id":98,
+        "content":"In Toy Story 3, who runs the daycare where the toys end up?",
+        "option1":"Woody",
+        "option2":"Lotso",
+        "option3":"Mr. Potato Head",
+        "option4":"Ken",
+        "solution":"Lotso"
+    },
+    {
+        "id":99,
+        "content":"In The Prestige, what is the name of the illusion that causes a deadly rivalry between the two magicians?",
+        "option1":"The Crippled Man",
+        "option2":"The Transported Man",
+        "option3":"The Disappearing Lady",
+        "option4":"The Great Escape",
+        "solution":"The Transported Man"
+    },
+    {
+        "id":100,
+        "content":"In Avatar: The Last Airbender, which of the following avatars doe Aang NOT seek advice from?",
+        "option1":"Avatar Kuruk",
+        "option2":"Avatar Wan",
+        "option3":"Avatar Yangchen",
+        "option4":"Avatar Kyoshi",
+        "solution":"Avatar Wan"
     }
 ]
