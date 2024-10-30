@@ -448,5 +448,284 @@
         "option3":"To be set free",
         "option4":"To be a prince",
         "solution":"To be a prince"
+    },
+    {
+        "id":51,
+        "content":"In Back to the Future (1985), what is the precise speed Marty needs to reach in order to activate the DeLorean’s time travel?",
+        "option1":"85 mph",
+        "option2":"88 mph",
+        "option3":"90 mph",
+        "option4":"95 mph",
+        "solution":"88 mph"
+    },
+    {
+        "id":52,
+        "content":"In The Princess Bride (1987), what phrase does Westley often say to Buttercup?",
+        "option1":"As you wish",
+        "option2":"Forever yours",
+        "option3":"Only for you",
+        "option4":"True love",
+        "solution":"As you wish"
+    },
+    {
+        "id":53,
+        "content":"In Die Hard (1988), what is the name of the skyscraper where John McClane faces off against the terrorists?",
+        "option1":"Empire State Building",
+        "option2":"Nakatomi Plaza",
+        "option3":"Willis Tower",
+        "option4":"Stark Tower",
+        "solution":"Nakatomi Plaza"
+    },
+    {
+        "id":54,
+        "content":"In Beetlejuice (1988), how many times do you need to say Beetlejuice's name to summon him?",
+        "option1":"Once",
+        "option2":"Twice",
+        "option3":"Three times",
+        "option4":"Four times",
+        "solution":"Three times"
+    },
+    {
+        "id":55,
+        "content":"In Indiana Jones and the Last Crusade (1989), what is the Holy Grail believed to grant?",
+        "option1":"Immortality",
+        "option2":"Infinite knowledge",
+        "option3":"Wealth",
+        "option4":"Strength",
+        "solution":"Immortality"
+    },
+    {
+        "id":56,
+        "content":"In Aliens (1986), what type of weapon is Ellen Ripley famous for using in her final battle against the Alien Queen?",
+        "option1":"Pulse rifle",
+        "option2":"Grenade launcher",
+        "option3":"Flamethrower",
+        "option4":"Power loader",
+        "solution":"Power loader"
+    },
+    {
+        "id":57,
+        "content":"In The Little Mermaid (1989), what is the name of the sea witch who grants Ariel the ability to walk on land?",
+        "option1":"Morgana",
+        "option2":"Ursula",
+        "option3":"Athena",
+        "option4":"Syrena",
+        "solution":"Ursula"
+    },
+    {
+        "id":58,
+        "content":"In Lethal Weapon* (1987), what is the catchphrase commonly associated with Roger Murtaugh, especially in dangerous situations?",
+        "option1":"I’m getting too old for this",
+        "option2":"This is my last day",
+        "option3":"One last time",
+        "option4":"Not again!",
+        "solution":"I’m getting too old for this"
+    },
+    {
+        "id":59,
+        "content":"In The Goonies (1985), what treasure are the kids searching for?",
+        "option1":"The Lost Pearl",
+        "option2":"One-Eyed Willy’s treasure",
+        "option3":"The Cursed Gold",
+        "option4":"The Pirate’s Chest",
+        "solution":"One-Eyed Willy’s treasure"
+    },
+    {
+        "id":60,
+        "content":"In Who Framed Roger Rabbit (1988), what is the only substance capable of killing a cartoon character?",
+        "option1":"The Dip",
+        "option2":"Ink Remover",
+        "option3":"The Solvent",
+        "option4":"The Eraser",
+        "solution":"The Dip"
+    },
+    {
+        "id":61,
+        "content":"In The Empire Strikes Back (1980), which character famously says, 'I am your father'?",
+        "option1":"Obi-Wan Kenobi",
+        "option2":"Darth Vader",
+        "option3":"Yoda",
+        "option4":"Luke Skywalker",
+        "solution":"Darth Vader"
+    },
+    {
+        "id":62,
+        "content":"In Raiders of the Lost Ark (1981), what artifact is Indiana Jones seeking?",
+        "option1":"The Holy Grail",
+        "option2":"The Ark of the Covenant",
+        "option3":"The Spear of Destiny",
+        "option4":"The Crystal Skull",
+        "solution":"The Ark of the Covenant"
+    },
+    {
+        "id":63,
+        "content":"In Scarface (1983), what is Tony Montana’s iconic line before his final showdown?",
+        "option1":"Say hello to my little friend!",
+        "option2":"This town is mine!",
+        "option3":"I'm the king now!",
+        "option4":"Time to meet your maker!",
+        "solution":"Say hello to my little friend!"
+    },
+    {
+        "id":64,
+        "content":"In E.T. the Extra-Terrestrial (1982), what candy does Elliott use to lure E.T. into his home?",
+        "option1":"Skittles",
+        "option2":"M&M's",
+        "option3":"Reese’s Pieces",
+        "option4":"Gummy Bears",
+        "solution":"Reese’s Pieces"
+    },
+    {
+        "id":65,
+        "content":"In The Shining (1980), what word does Danny repeatedly write backwards?",
+        "option1":"Murder",
+        "option2":"Death",
+        "option3":"Blood",
+        "option4":"Fear",
+        "solution":"Murder"
+    },
+    {
+        "id":66,
+        "content":"In Ghostbusters (1984), what type of ghost is Slimer known as?",
+        "option1":"The Hungry Ghost",
+        "option2":"The Green Ghoul",
+        "option3":"The Ectoplasmic Phantom",
+        "option4":"The Class 5 Free-Roaming Vapor",
+        "solution":"The Class 5 Free-Roaming Vapor"
+    },
+    {
+        "id":67,
+        "content":"In The Terminator (1984), what is the name of the character sent back to protect Sarah Connor?",
+        "option1":"Kyle Reese",
+        "option2":"John Connor",
+        "option3":"T-800",
+        "option4":"Marcus Wright",
+        "solution":"Kyle Reese"
+    },
+    {
+        "id":68,
+        "content":"In Star Trek II: The Wrath of Khan (1982), what is the name of the project that can create life from lifeless matter?",
+        "option1":"Genesis",
+        "option2":"Omega",
+        "option3":"Project Phoenix",
+        "option4":"Nebula Project",
+        "solution":"Genesis"
+    },
+    {
+        "id":69,
+        "content":"In The Dark Crystal (1982), what race of creatures is Jen, the film’s protagonist?",
+        "option1":"Elf",
+        "option2":"Gelfling",
+        "option3":"Mystic",
+        "option4":"Skeksis",
+        "solution":"Gelfling"
+    },
+    {
+        "id":70,
+        "content":"In Flash Gordon (1980), who is the main antagonist ruling over the planet Mongo?",
+        "option1":"Emperor Zurg",
+        "option2":"Darth Vader",
+        "option3":"Ming the Merciless",
+        "option4":"The Phantom",
+        "solution":"Ming the Merciless"
+    },
+    {
+        "id":71,
+        "content":"How many seasons does The Simpsons have?",
+        "option1":"21",
+        "option2":"54",
+        "option3":"42",
+        "option4":"36",
+        "solution":"36"
+    },
+    {
+        "id":72,
+        "content":"Which of the following TV shows is not based on a video game?",
+        "option1":"Halo",
+        "option2":"The Witcher",
+        "option3":"The Last Of Us",
+        "option4":"Gangs of London",
+        "solution":"The Witcher"
+    },
+    {
+        "id":72,
+        "content":"Which of the following TV Shows has the most amount of seasons?",
+        "option1":"Modern Family",
+        "option2":"How I Met Your Mother",
+        "option3":"Friends",
+        "option4":"The Big Bang Theory",
+        "solution":"The Big Bang Theory"
+    },
+    {
+        "id":73,
+        "content":"Which of the following franchises has NOT released at least both a movie and tv series?",
+        "option1":"Breaking Bad",
+        "option2":"Mission Impossible",
+        "option3":"Peaky Blinders",
+        "option4":"Taken",
+        "solution":"Peaky Blinders"
+    },
+    {
+        "id":74,
+        "content":"Which of the following movies has the lowest score on rotton tomatoes?",
+        "option1":"Joker: Folie à Deux (2024)",
+        "option2":"The Flash (2023)",
+        "option3":"The Last Airbender (2010)",
+        "option4":"After Earth (2013)",
+        "solution":"The Last Airbender (2010)"
+    },
+    {
+        "id":75,
+        "content":"Which of the following seasons that in 2024 has highest rating according to rotton tomatoes?",
+        "option1":"Shogun : Season 1",
+        "option2":"Fallout : Season 1",
+        "option3":"The Penguin : Season 1",
+        "option4":"The Tourist : Season 2",
+        "solution":"Shogun : Season 1"
+    },
+    {
+        "id":76,
+        "content":"Of the CW Arrowverse TV series, which was the first to get canceled?",
+        "option1":"Batwoman",
+        "option2":"Arrow",
+        "option3":"Black Lightning",
+        "option4":"Supergirl",
+        "solution":"Arrow"
+    },
+    {
+        "id":77,
+        "content":"Which of the following Star Wars films has the most lightsaber duels?",
+        "option1":"Rise of Skywalker",
+        "option2":"Revenge of the Sith",
+        "option3":"The Force Awakens",
+        "option4":"Attack of the Clones",
+        "solution":"Revenge of the Sith"
+    },
+    {
+        "id":78,
+        "content":"Which does the following quote come from: 'Taking on a challenge is a lot like riding a horse, isn’t it? If you’re comfortable while you’re doing it, you’re probably doing it wrong.'",
+        "option1":"Schitt's Creek",
+        "option2":"Parks and Recreation",
+        "option3":"Brooklyn Nine-Nine",
+        "option4":"Ted Lasso",
+        "solution":"Ted Lasso"
+    },
+    {
+        "id":79,
+        "content":"What is the name of the mother in 'How I Met Your Mother'?",
+        "option1":"Tracy McConnell",
+        "option2":"Robin Scherbatsky",
+        "option3":"Stella Zinman",
+        "option4":"Zoey Pierson",
+        "solution":"Tracy McConnell"
+    },
+    {
+        "id":80,
+        "content":"How does the Rose Family initially lose their wealth in 'Schitt's Creek'?",
+        "option1":"They gambled it away",
+        "option2":"They lost it in a business venture",
+        "option3":"Their accountant embezzled it",
+        "option4":"They get caught distributing illegal contraband",
+        "solution":"Their accountant embezzled it"
     }
 ]
