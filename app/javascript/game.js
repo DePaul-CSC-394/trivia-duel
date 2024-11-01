@@ -37,13 +37,16 @@ document.addEventListener('keydown', function(event) {
 
 function checkAnswer(selectedOption) {
     const correctAnswer = document.getElementById('correct-answer').value;
+    const optionButtons = document.querySelectorAll('.option-button');
     if (!isAnswered) {
         clearInterval(questionTimerInterval);
+
         if (selectedOption === correctAnswer) {
             playCorrectAnswerSoundEffect();
             document.getElementById('steal').textContent = '';
             document.getElementById('result').textContent = currentPlayer + ' answered correctly!';
             isAnswered = true;
+
             if (currentPlayer === player1Name) {
                 player1Score++;
             } else if (currentPlayer === player2Name) {
@@ -51,6 +54,12 @@ function checkAnswer(selectedOption) {
             }
 
             updateScoreDisplay();
+            optionButtons.forEach(button => {
+                if (button.getAttribute('data-answer') === correctAnswer) {
+                    button.classList.add('correct-answer');
+                }
+            });
+
             if (player1Score >= pointsToWin || player2Score >= pointsToWin) {
                 declareWinner(currentPlayer);
             } else {
@@ -62,10 +71,25 @@ function checkAnswer(selectedOption) {
             document.getElementById('result').textContent = currentPlayer + ' answered incorrectly!';
             answerAttempts++;
             disableAnswerButtons();
+
+            optionButtons.forEach(button => {
+                if (button.getAttribute('data-answer') === selectedOption) {
+                    button.classList.add('wrong-answer');
+                }
+            });
             if (answerAttempts < 2) {
-                stealQuestion();
+                setTimeout(() => {
+                    optionButtons.forEach(button => {
+                        button.classList.remove('wrong-answer');
+                    });
+                    stealQuestion();
+                }, 500);
             } else {
-                document.getElementById('steal').textContent = '';
+                optionButtons.forEach(button => {
+                    if (button.getAttribute('data-answer') === correctAnswer) {
+                        button.classList.add('correct-answer');
+                    }
+                });
                 questionCountdown();
             }
         }
@@ -148,6 +172,9 @@ function resetRound() {
     chanceToSteal = false;
     answerAttempts = 0;
     document.getElementById('skip-button').disabled = false;
+    document.querySelectorAll('.option-button').forEach(button => {
+        button.classList.remove('correct-answer', 'wrong-answer');
+    });
 }
 
 function loadNewQuestion() {
@@ -216,7 +243,7 @@ function startNewGame() {
     updateScoreDisplay();
     disableAnswerButtons();
     document.getElementById('skip-button').disabled = false;
-    
+
     loadNewQuestion();
 }
 
