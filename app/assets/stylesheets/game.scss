@@ -20,20 +20,20 @@ body, html {
         align-items: center;
         justify-content: center;
         color: white;
-        font-family: 'VT323';    
+        font-family: 'VT323';
         font-size: 2.5rem;
-        letter-spacing: 0.1em; 
+        letter-spacing: 0.1em;
     }
     p {
         color: white;
-        font-family: 'VT323';    
+        font-family: 'VT323';
         font-size: 2rem;
-        letter-spacing: 0.1em; 
+        letter-spacing: 0.1em;
     }
 }
 .score {
     color: white;
-    font-family: 'VT323';    
+    font-family: 'VT323';
     font-size: 2rem;
     letter-spacing: 0.1em
 }
@@ -58,7 +58,7 @@ body, html {
     height: 80px;
     background-color: lightslategray;
     color: white;
-    font-family: 'Press Start 2P';     
+    font-family: 'Press Start 2P';
     font-size: 1rem;
     cursor: pointer;
     border: none;
@@ -71,9 +71,19 @@ body, html {
     cursor: not-allowed;
 }
 
+.correct-answer {
+    background-color: green !important;
+    color: white;
+}
+
+.wrong-answer {
+    background-color: red !important;
+    color: white;
+}
+
 .manage-game-buttons {
     background-color: lightslategray;
-    font-family: 'Press Start 2P';     
+    font-family: 'Press Start 2P';
     font-size: 1rem;
     color: white;
     height: 70px;
@@ -86,7 +96,7 @@ body, html {
 }
 .gameplay {
     color: white;
-    font-family: 'VT323';    
+    font-family: 'VT323';
     font-size: 1.5rem;
-    letter-spacing: 0.1em; 
+    letter-spacing: 0.1em;
 }
