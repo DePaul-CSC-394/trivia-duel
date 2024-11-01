@@ -1,24 +1,26 @@
-<div class="container">
+<head><%= stylesheet_link_tag 'game', media: 'all' %>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<div class="game-page">
   <h2><%= @question.content %></h2>
 
-  <button id="new-game-button" onclick="startNewGame()">New Game</button>
-  <div><button id="skip-button" onclick="skipQuestion()">Skip Question</button></div>
+  <button class="manage-game-buttons" id="skip-button" onclick="skipQuestion()">Skip Question</button>
 
-  <div id="player1-score">Player 1 Score: 0</div>
-  <div id="player2-score">Player 2 Score: 0</div>
+  <div class= "score" id="player1-score">Player 1 Score: 0</div>
+  <div class="score" id="player2-score">Player 2 Score: 0</div>
 
   <div class="options">
-
-    <div>
-      <button class="option-button" data-answer="<%= @question.option1 %>">A.  <%= @question.option1 %></button>
-      <button class="option-button" data-answer="<%= @question.option2 %>">B. <%= @question.option2 %></button>
+    <div class="option-row">
+        <button class="option-button" data-answer="<%= @question.option1 %>">A. <%= @question.option1 %></button>
+        <button class="option-button" data-answer="<%= @question.option2 %>">B. <%= @question.option2 %></button>
     </div>
-
-    <div>
-      <button class="option-button" data-answer="<%= @question.option3 %>">C. <%= @question.option3 %></button>
-      <button class="option-button" data-answer="<%= @question.option4 %>">D. <%= @question.option4 %></button>
+    <div class="option-row">
+        <button class="option-button" data-answer="<%= @question.option3 %>">C. <%= @question.option3 %></button>
+        <button class="option-button" data-answer="<%= @question.option4 %>">D. <%= @question.option4 %></button>
     </div>
-  </div>
+</div>
+
 
   <input type="hidden" id="correct-answer" value="<%= @question.solution %>">
 
@@ -26,9 +28,12 @@
   <p>Player 1: Press 'A' to buzz in</p>
   <p>Player 2: Press 'L' to buzz in</p>
 
-  <div id="result"></div>
-  <div id="steal"></div>
-  <div id="countdown"></div>
+  <div class="gameplay" id="result"></div>
+  <div class="gameplay" id="steal"></div>
+  <div class="gameplay" id="countdown"></div>
 
   <%= javascript_include_tag 'game' %>
+  <button class="manage-game-buttons" id="new-game-button" onclick="location.href='/settings'">New Game</button>
+
 </div>
+

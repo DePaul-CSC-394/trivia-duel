@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: rgb(3, 3, 95);
+    margin: 0;
+    padding: 0;
+
+    h2 {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'VT323';    
+        font-size: 2.5rem;
+        letter-spacing: 0.1em; 
+    }
+    p {
+        color: white;
+        font-family: 'VT323';    
+        font-size: 2rem;
+        letter-spacing: 0.1em; 
+    }
+}
+.score {
+    color: white;
+    font-family: 'VT323';    
+    font-size: 2rem;
+    letter-spacing: 0.1em
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.option-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.option-button {
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 80px;
+    background-color: lightslategray;
+    color: white;
+    font-family: 'Press Start 2P';     
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.option-button:disabled {
+    background-color: rgb(69, 67, 67);
+    color: white;
+    cursor: not-allowed;
+}
+
+.manage-game-buttons {
+    background-color: lightslategray;
+    font-family: 'Press Start 2P';     
+    font-size: 1rem;
+    color: white;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.manage-game-buttons:disabled {
+    background-color: rgb(69, 67, 67);
+    color: white;
+    cursor: not-allowed;
+}
+.gameplay {
+    color: white;
+    font-family: 'VT323';    
+    font-size: 1.5rem;
+    letter-spacing: 0.1em; 
+}

@@ -8,10 +8,13 @@ let player1Score = 0;
 let player2Score = 0;
 let gameOver = false;
 let shownQuestionIds = [];
+let player1Name = localStorage.getItem('player1Name') || 'Player 1';
+let player2Name = localStorage.getItem('player2Name') || 'Player 2';
+let pointsToWin = parseInt(localStorage.getItem('pointsToWin')) || 10;
 
 function updateScoreDisplay() {
-    document.getElementById('player1-score').textContent = 'Player 1 Score: ' + player1Score;
-    document.getElementById('player2-score').textContent = 'Player 2 Score: ' + player2Score;
+    document.getElementById('player1-score').textContent = player1Name + ': ' + player1Score;
+    document.getElementById('player2-score').textContent = player2Name + ': ' + player2Score;
 }
 
 document.addEventListener('keydown', function(event) {
@@ -20,12 +23,12 @@ document.addEventListener('keydown', function(event) {
         enableAnswerButtons();
         if (event.key === 'a' || event.key === 'A') {
             questionTimer()
-            currentPlayer = 'Player 1';
-            otherPlayer = 'Player 2';
+            currentPlayer = player1Name;
+            otherPlayer = player2Name;
         } else if (event.key === 'l' || event.key === 'L') {
             questionTimer()
-            currentPlayer = 'Player 2';
-            otherPlayer = 'Player 1';
+            currentPlayer = player2Name;
+            otherPlayer = player1Name;
         }
 
         document.getElementById('result').textContent = currentPlayer + ' buzzed in!';
@@ -41,14 +44,14 @@ function checkAnswer(selectedOption) {
             document.getElementById('steal').textContent = '';
             document.getElementById('result').textContent = currentPlayer + ' answered correctly!';
             isAnswered = true;
-            if (currentPlayer === 'Player 1') {
+            if (currentPlayer === player1Name) {
                 player1Score++;
-            } else if (currentPlayer === 'Player 2') {
+            } else if (currentPlayer === player2Name) {
                 player2Score++;
             }
 
             updateScoreDisplay();
-            if (player1Score === 10 || player2Score === 10) {
+            if (player1Score >= pointsToWin || player2Score >= pointsToWin) {
                 declareWinner(currentPlayer);
             } else {
                 disableAnswerButtons();
@@ -124,6 +127,7 @@ function questionTimer() {
         document.getElementById('countdown').textContent = countdown + " seconds left to answer...";
         countdown--;
         if (countdown < 0) {
+            playWrongAnswerSoundEffect()
             clearInterval(questionTimerInterval);
             document.getElementById('result').textContent = currentPlayer + ' did not answer in time!';
             isAnswered = true;
@@ -191,6 +195,9 @@ function skipQuestion(){
 }
 
 function startNewGame() {
+    localStorage.removeItem('player1Name');
+    localStorage.removeItem('player2Name');
+    localStorage.removeItem('pointsToWin');
     player1Score = 0;
     player2Score = 0;
     gameOver = false;
