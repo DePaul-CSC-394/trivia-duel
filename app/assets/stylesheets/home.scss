@@ -13,7 +13,7 @@ body, html {
     padding: 0;
     h1 {
       color: white;
-      font-family: 'Press Start 2P';     
+      font-family: 'Press Start 2P';
       font-size: 4rem;
     }
     h2 {
@@ -22,18 +22,18 @@ body, html {
         align-items: center;
         justify-content: flex-start;
         color: white;
-        font-family: 'Press Start 2P';     
+        font-family: 'Press Start 2P';
         font-size: 2rem;
     }
     label {
         color: white;
-        font-family: 'VT323';    
+        font-family: 'VT323';
         font-size: 2rem;
-        letter-spacing: 0.1em; 
+        letter-spacing: 0.1em;
     }
     p {
       color: white;
-      font-family: 'Press Start 2P';     
+      font-family: 'Press Start 2P';
       font-size: 1rem;
     }
     a {
@@ -55,12 +55,25 @@ body, html {
         height: 100px;
         background-color: lightslategray;
         color: white;
-        font-family: 'Press Start 2P';     
+        font-family: 'Press Start 2P';
         font-size: 1rem;
         margin: 10px 0;
         cursor: pointer;
     }
-}
+  }
+
+  .countdown-page {
+    justify-content: center;
+
+    .countdown-number {
+      font-family: 'VT323', monospace;
+      font-size: 8rem;
+      color: white;
+      margin-top: 20px;
+      animation: pulse 1s infinite;
+    }
+  }
+
 .player-names {
     display: flex;
     flex-direction: column;
@@ -73,6 +86,11 @@ body, html {
     justify-content: left;
     margin-bottom: 20px;
 }
-
-
-  
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
