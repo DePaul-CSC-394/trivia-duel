@@ -1,0 +1,38 @@
+<head>
+    <%= stylesheet_link_tag 'home', media: 'all' %>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="homepage countdown-page">
+        <div id="countdown" class="countdown-number">3</div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let countdown = 3;
+            const countdownElement = document.getElementById('countdown');
+
+            const countdownAudio = new Audio('/assets/arcade-countdown.mp3');
+            countdownAudio.play();
+
+            countdownElement.textContent = countdown;
+
+            const countdownInterval = setInterval(() => {
+                countdown--;
+
+                if (countdown >= 0) {
+                    countdownElement.textContent = countdown > 0 ? countdown : 'GO!';
+                } else {
+                    clearInterval(countdownInterval);
+                    setTimeout(() => {
+                        window.location.href = '/games/new';
+                    }, 150);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+
