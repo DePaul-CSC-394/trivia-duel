@@ -1447,5 +1447,293 @@
         "option3":"Daddy Yankee",
         "option4":"Anuel AA",
         "solution":"Bad Bunny"
+    },
+    {
+        "id":161,
+        "content":"What movie did Leonardo DiCaprio finally win his first Oscar for?",
+        "option1":"The Revenant",
+        "option2":"Inception",
+        "option3":"The Wolf of Wall Street",
+        "option4":"Titanic",
+        "solution":"The Revenant"
+    },
+    {
+        "id":162,
+        "content":"Which band recorded the theme song for the James Bond film 'Skyfall'?",
+        "option1":"Radiohead",
+        "option2":"Adele",
+        "option3":"Sam Smith",
+        "option4":"Billie Eilish",
+        "solution":"Adele"
+    },
+    {
+        "id":163,
+        "content":"Which movie features the song 'My Heart Will Go On' by Celine Dion?",
+        "option1":"The Bodyguard",
+        "option2":"Titanic",
+        "option3":"Ghost",
+        "option4":"Pretty Woman",
+        "solution":"Titanic"
+    },
+    {
+        "id":164,
+        "content":"Who directed the movie Pulp Fiction?",
+        "option1":"Martin Scorsese",
+        "option2":"Steven Spielberg",
+        "option3":"Quentin Tarantino",
+        "option4":"Francis Ford Coppola",
+        "solution":"Quentin Tarantino"
+    },
+    {
+        "id":165,
+        "content":"Who won an Oscar for their role in *Black Swan*?",
+        "option1":"Mila Kunis",
+        "option2":"Natalie Portman",
+        "option3":"Emma Stone",
+        "option4":"Anne Hathaway",
+        "solution":"Natalie Portman"
+    },
+    {
+        "id":166,
+        "content":"What was the first Pixar movie ever released?",
+        "option1":"Toy Story",
+        "option2":"Finding Nemo",
+        "option3":"Monsters, Inc.",
+        "option4":"The Incredibles",
+        "solution":"Toy Story"
+    },
+    {
+        "id":167,
+        "content":"Which movie had the tagline 'In space, no one can hear you scream'?",
+        "option1":"2001: A Space Odyssey",
+        "option2":"Alien",
+        "option3":"Star Wars",
+        "option4":"Event Horizon",
+        "solution":"Alien"
+    },
+    {
+        "id":168,
+        "content":"Who directed the 1993 movie Jurassic Park?",
+        "option1":"James Cameron",
+        "option2":"Steven Spielberg",
+        "option3":"George Lucas",
+        "option4":"Ridley Scott",
+        "solution":"Steven Spielberg"
+    },
+    {
+        "id":169,
+        "content":"Which actress stars in the movie La La Land alongside Ryan Gosling?",
+        "option1":"Emma Stone",
+        "option2":"Jennifer Lawrence",
+        "option3":"Anne Hathaway",
+        "option4":"Emma Watson",
+        "solution":"Emma Stone"
+    },
+    {
+        "id":170,
+        "content":"Who is known for the hit single 'Uptown Funk' with Bruno Mars?",
+        "option1":"Pharrell Williams",
+        "option2":"Mark Ronson",
+        "option3":"Justin Timberlake",
+        "option4":"Pitbull",
+        "solution":"Mark Ronson"
+    },
+    {
+        "id":171,
+        "content":"What is Bruno Mars' break out single?",
+        "option1":"Just The Way You Are",
+        "option2":"Grenade",
+        "option3":"Nothing On You",
+        "option4":"Locked Out Of Heaven",
+        "solution":"Just The Way You Are"
+    },
+    {
+        "id":172,
+        "content":"What is Bruno Mars' break out single?",
+        "option1":"Just The Way You Are",
+        "option2":"Grenade",
+        "option3":"Nothing On You",
+        "option4":"Locked Out Of Heaven",
+        "solution":"Just The Way You Are"
+    },
+    {
+        "id":173,
+        "content":"Which artist is known as the 'King of Country Music'?",
+        "option1":"Johnny Cash",
+        "option2":"Willie Nelson",
+        "option3":"George Strait",
+        "option4":"Garth Brooks",
+        "solution":"George Strait"
+    },
+    {
+        "id":174,
+        "content":"Which song by Dolly Parton was famously covered by Whitney Houston?",
+        "option1":"Jolene",
+        "option2":"I Will Always Love You",
+        "option3":"9 to 5",
+        "option4":"Islands in the Stream",
+        "solution":"I Will Always Love You"
+    },
+    {
+        "id":175,
+        "content":"What is the name of the country artist who released the album 'Golden Hour', winning the Grammy for Album of the Year in 2019?",
+        "option1":"Miranda Lambert",
+        "option2":"Kacey Musgraves",
+        "option3":"Carrie Underwood",
+        "option4":"Maren Morris",
+        "solution":"Kacey Musgraves"
+    },
+    {
+        "id":176,
+        "content":"Who is the best-selling country artist of all time?",
+        "option1":"Johnny Cash",
+        "option2":"Garth Brooks",
+        "option3":"George Jones",
+        "option4":"Willie Nelson",
+        "solution":"Garth Brooks"
+    },
+    {
+        "id":177,
+        "content":"Which singer-songwriter released the song 'Take Me Home, Country Roads'?",
+        "option1":"Kenny Rogers",
+        "option2":"Willie Nelson",
+        "option3":"John Denver",
+        "option4":"Waylon Jennings",
+        "solution":"John Denver"
+    },
+    {
+        "id":178,
+        "content":"Which artist is known for the hits 'Before He Cheats' and 'Jesus, Take the Wheel'?",
+        "option1":"Carrie Underwood",
+        "option2":"Miranda Lambert",
+        "option3":"Taylor Swift",
+        "option4":"Reba McEntire",
+        "solution":"Carrie Underwood"
+    },
+    {
+        "id":179,
+        "content":"Who sang the country hit 'Friends in Low Places'?",
+        "option1":"Alan Jackson",
+        "option2":"Garth Brooks",
+        "option3":"George Strait",
+        "option4":"Blake Shelton",
+        "solution":"Garth Brooks"
+    },
+    {
+        "id":180,
+        "content":"What was Johnny Cash’s nickname, inspired by his dark attire?",
+        "option1":"The Outlaw",
+        "option2":"The Black Rider",
+        "option3":"The Man in Black",
+        "option4":"The Country Crooner",
+        "solution":"The Man in Black"
+    },
+    {
+        "id":181,
+        "content":"Which female artist had a hit with the song 'Man! I Feel Like a Woman!'?",
+        "option1":"Shania Twain",
+        "option2":"Reba McEntire",
+        "option3":"Faith Hill",
+        "option4":"Dolly Parton",
+        "solution":"Shania Twain"
+    },
+    {
+        "id":182,
+        "content":"Which country duo is known for hits like 'Need You Now' and 'American Honey'?",
+        "option1":"Florida Georgia Line",
+        "option2":"Dan + Shay",
+        "option3":"Brooks & Dunn",
+        "option4":"Lady A",
+        "solution":"Lady A"
+    },
+    {
+        "id":183,
+        "content":"What is Deftones' break out song?",
+        "option1":"Change (In The House of Flies)",
+        "option2":"Cherry Waves",
+        "option3":"My Own Summer (Shove It)",
+        "option4":"Be Quiet And Drive (Far Away)",
+        "solution":"Be Quiet And Drive (Far Away)"
+    },
+    {
+        "id":184,
+        "content":"What is Rihanna's break out single?",
+        "option1":"Umbrella",
+        "option2":"Disturbia",
+        "option3":"Pon de Replay",
+        "option4":"Dont Stop The Music",
+        "solution":"Pon de Replay"
+    },
+    {
+        "id":185,
+        "content":"What is Childish Gambino's break out single?",
+        "option1":"3005",
+        "option2":"Bonfire",
+        "option3":"Redbone",
+        "option4":"Freak and Geeks",
+        "solution":"Bonfire"
+    },
+    {
+        "id":186,
+        "content":"What is the title of Radiohead’s hit song from their 1997 album 'OK Computer', often regarded as one of their most influential tracks?",
+        "option1":"Creep",
+        "option2":"Paranoid Android",
+        "option3":"Karma Police",
+        "option4":"High and Dry",
+        "solution":"Karma Police"
+    },
+    {
+        "id":187,
+        "content":"What is the name of Frank Ocean’s critically acclaimed debut studio album, released in 2012?",
+        "option1":"Channel Orange",
+        "option2":"Blonde",
+        "option3":"Nostalgia, Ultra",
+        "option4":"Endless",
+        "solution":"Channel Orange"
+    },
+    {
+        "id":188,
+        "content":"What is Daft Punk's hit song featuring Pharrell Williams, which became a global sensation in 2013?",
+        "option1":"Around the World",
+        "option2":"Harder, Better, Faster, Stronger",
+        "option3":"One More Time",
+        "option4":"Get Lucky",
+        "solution":"Get Lucky"
+    },
+    {
+        "id":189,
+        "content":"What is Kanye West's debut album, released in 2004?",
+        "option1":"The College Dropout",
+        "option2":"Graduation",
+        "option3":"Late Registration",
+        "option4":"808s & Heartbreak",
+        "solution":"The College Dropout"
+    },
+    {
+        "id":190,
+        "content":"Which Kanye West album is often regarded as one of the greatest hip-hop albums and includes the single 'Power'?",
+        "option1":"Ye",
+        "option2":"The Life of Pablo",
+        "option3":"My Beautiful Dark Twisted Fantasy",
+        "option4":"Graduation",
+        "solution":"My Beautiful Dark Twisted Fantasy"
+    },
+    {
+        "id":191,
+        "content":"Which hip hop artist is famously known for their strained relationship with their mother and partner?",
+        "option1":"Lil Wayne",
+        "option2":"Dr Dre",
+        "option3":"50 Cent",
+        "option4":"Eminem",
+        "solution":"Eminem"
+    },
+    {
+        "id":192,
+        "content":"What is the title of One Direction's debut single, released in 2011, which launched them to global fame?",
+        "option1":"What Makes You Beautiful",
+        "option2":"Live While We're Young",
+        "option3":"Story of My Life",
+        "option4":"Best Song Ever",
+        "solution":"What Makes You Beautiful"
     }
 ]
