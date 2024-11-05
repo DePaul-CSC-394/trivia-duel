@@ -23,7 +23,7 @@ body, html {
         justify-content: flex-start;
         color: white;
         font-family: 'Press Start 2P';
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     label {
         color: white;
@@ -34,7 +34,7 @@ body, html {
     p {
       color: white;
       font-family: 'Press Start 2P';
-      font-size: 1rem;
+      font-size: 15px;
     }
     a {
       background-color: #3498db;
@@ -59,6 +59,16 @@ body, html {
         font-size: 1rem;
         margin: 10px 0;
         cursor: pointer;
+    }
+    .instructions {
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Press Start 2P';
+    }
+    .instructions p {
+        font-size: 15px;
+        line-height: 1.5;
     }
   }
 
