@@ -907,5 +907,545 @@
         "option3":"Avatar Yangchen",
         "option4":"Avatar Kyoshi",
         "solution":"Avatar Wan"
+    },
+    {
+        "id": 101,
+        "content":"Which pop star is known as the 'Queen of Pop'?",
+        "option1":"Britney Spears",
+        "option2":"Beyoncé",
+        "option3":"Madonna",
+        "option4":"Lady Gaga",
+        "solution":"Madonna"
+    },
+    {
+        "id": 102,
+        "content":"Which 1980s band released the hit song 'Sweet Child O' Mine'?",
+        "option1":"Bon Jovi",
+        "option2":"Guns N' Roses",
+        "option3":"AC/DC",
+        "option4":"Metallica",
+        "solution":"Guns N' Roses"
+    },
+    {
+        "id":103,
+        "content":"Who is the lead vocalist of the rock band U2?",
+        "option1":"Sting",
+        "option2":"Bono",
+        "option3":"Freddie Mercury",
+        "option4":"David Bowie",
+        "solution":"Bono"
+    },
+    {
+        "id": 104,
+        "content": "Which artist is known for the 1982 album 'Thriller'?",
+        "option1": "Prince",
+        "option2": "Madonna",
+        "option3": "Michael Jackson",
+        "option4": "Stevie Wonder",
+        "solution": "Michael Jackson"
+    },
+    {
+        "id": 105,
+        "content": "Which famous band was Freddie Mercury a part of?",
+        "option1": "Led Zeppelin",
+        "option2": "Queen",
+        "option3": "The Rolling Stones",
+        "option4": "The Beatles",
+        "solution": "Queen"
+    },
+    {
+        "id": 106,
+        "content": "Who is the best-selling female artist of all time?",
+        "option1": "Celine Dion",
+        "option2": "Whitney Houston",
+        "option3": "Mariah Carey",
+        "option4": "Madonna",
+        "solution": "Madonna"
+    },
+    {
+        "id": 107,
+        "content": "In what year did Nirvana release their groundbreaking album 'Nevermind'?",
+        "option1": "1990",
+        "option2": "1991",
+        "option3": "1992",
+        "option4": "1993",
+        "solution": "1991"
+    },
+    {
+        "id": 108,
+        "content": "What is the name of the band that Kurt Cobain was the lead singer of?",
+        "option1": "Pearl Jam",
+        "option2": "Nirvana",
+        "option3": "Soundgarden",
+        "option4": "Alice in Chains",
+        "solution": "Nirvana"
+    },
+    {
+        "id": 109,
+        "content": "Which song is the best-selling single of all time?",
+        "option1": "White Christmas by Bing Crosby",
+        "option2": "Shape of You by Ed Sheeran",
+        "option3": "Candle in the Wind by Elton John",
+        "option4": "Despacito by Luis Fonsi",
+        "solution": "White Christmas by Bing Crosby"
+    },
+    {
+        "id": 110,
+        "content": "Which rapper is known for the album 'The Marshall Mathers LP'?",
+        "option1": "Jay-Z",
+        "option2": "Eminem",
+        "option3": "Nas",
+        "option4": "50 Cent",
+        "solution": "Eminem"
+    },
+    {
+        "id": 111,
+        "content": "Who wrote and originally performed the song 'Hallelujah'?",
+        "option1": "Bob Dylan",
+        "option2": "Leonard Cohen",
+        "option3": "Jeff Buckley",
+        "option4": "Paul Simon",
+        "solution": "Leonard Cohen"
+    },
+    {
+        "id": 112,
+        "content": "What iconic British band was fronted by Mick Jagger?",
+        "option1": "The Beatles",
+        "option2": "The Kinks",
+        "option3": "The Rolling Stones",
+        "option4": "The Who",
+        "solution": "The Rolling Stones"
+    },
+    {
+        "id": 113,
+        "content": "Which artist released the album 'Purple Rain'?",
+        "option1": "Prince",
+        "option2": "Michael Jackson",
+        "option3": "David Bowie",
+        "option4": "Whitney Houston",
+        "solution": "Prince"
+    },
+    {
+        "id": 114,
+        "content": "What is the stage name of Reginald Kenneth Dwight?",
+        "option1": "David Bowie",
+        "option2": "Elton John",
+        "option3": "Rod Stewart",
+        "option4": "Paul McCartney",
+        "solution": "Elton John"
+    },
+    {
+        "id": 115,
+        "content": "Who was the lead guitarist for Guns N' Roses?",
+        "option1": "Axl Rose",
+        "option2": "Slash",
+        "option3": "Izzy Stradlin",
+        "option4": "Duff McKagan",
+        "solution": "Slash"
+    },
+    {
+        "id": 116,
+        "content": "Which band released the song 'Smells Like Teen Spirit'?",
+        "option1": "Pearl Jam",
+        "option2": "Nirvana",
+        "option3": "Soundgarden",
+        "option4": "Alice in Chains",
+        "solution": "Nirvana"
+    },
+    {
+        "id": 117,
+        "content": "Which American rock band was known for the song 'Californication'?",
+        "option1": "Pearl Jam",
+        "option2": "The Eagles",
+        "option3": "Red Hot Chili Peppers",
+        "option4": "Green Day",
+        "solution": "Red Hot Chili Peppers"
+    },
+    {
+        "id": 118,
+        "content": "Who is known as the 'King of Pop'?",
+        "option1": "Elvis Presley",
+        "option2": "Prince",
+        "option3": "Michael Jackson",
+        "option4": "James Brown",
+        "solution": "Michael Jackson"
+    },
+    { 
+        "id": 119,
+        "content": "What genre is the band Metallica primarily associated with?",
+        "option1": "Punk Rock",
+        "option2": "Grunge",
+        "option3": "Heavy Metal",
+        "option4": "Alternative Rock",
+        "solution": "Heavy Metal"
+    },
+    { 
+        "id": 120, 
+        "content": "What song did Dolly Parton famously write and perform?", 
+        "option1": "Islands in the Stream", 
+        "option2": "Stand by Your Man", 
+        "option3": "Jolene", 
+        "option4": "Crazy", 
+        "solution": "Jolene" 
+    }, 
+    { 
+        "id": 121, 
+        "content": "Who is the frontman for the Foo Fighters?", 
+        "option1": "Eddie Vedder", 
+        "option2": "Chris Cornell", 
+        "option3": "Dave Grohl", 
+        "option4": "Kurt Cobain", 
+        "solution": "Dave Grohl" 
+    }, 
+    { 
+        "id": 122, 
+        "content": "Which band was known for the hit 'Livin' on a Prayer'?", 
+        "option1": "Aerosmith", 
+        "option2": "Bon Jovi", 
+        "option3": "Journey", 
+        "option4": "Def Leppard", 
+        "solution": "Bon Jovi" 
+    },
+    {
+        "id": 123,
+        "content": "What is the best-selling album of all time?",
+        "option1": "Back in Black by AC/DC",
+        "option2": "Abbey Road by The Beatles",
+        "option3": "Thriller by Michael Jackson",
+        "option4": "Hotel California by The Eagles",
+        "solution": "Thriller by Michael Jackson"
+    },
+    {
+        "id":124,
+        "content":"What album won Taylor Swift the Grammy for Album of the Year in 2021?",
+        "option1":"Lover",
+        "option2":"Evermore",
+        "option3":"Folklore",
+        "option4":"Red",
+        "solution":"Folklore"
+    },
+    {
+        "id":125,
+        "content":"Which rapper released the album 'DAMN.' in 2017, which later won the Pulitzer Prize for Music?",
+        "option1":"Drake",
+        "option2":"Kendrick Lamar",
+        "option3":"J. Cole",
+        "option4":"Jay-Z",
+        "solution":"Kendrick Lamar"
+    },
+    {
+        "id":126,
+        "content":"Which artist had a major hit in 2019 with the song 'Old Town Road'?",
+        "option1":"Lil Nas X",
+        "option2":"Post Malone",
+        "option3":"Travis Scott",
+        "option4":"Drake",
+        "solution":"Lil Nas X"
+    },
+    {
+        "id":127,
+        "content":"What was the debut single of Billie Eilish that went viral and launched her career?",
+        "option1":"Ocean Eyes",
+        "option2":"Bad Guy",
+        "option3":"Bury a Friend",
+        "option4":"Lovely",
+        "solution":"Ocean Eyes"
+    },
+    {
+        "id":128,
+        "content":"Which song by Ed Sheeran was the best-selling digital song worldwide in 2017?",
+        "option1":"Shape of You",
+        "option2":"Perfect",
+        "option3":"Thinking Out Loud",
+        "option4":"Castle on the Hill",
+        "solution":"Shape of You"
+    },
+    {
+        "id":129,
+        "content":"Who collaborated with Lady Gaga on the 2018 hit 'Shallow' from the movie 'A Star is Born'?",
+        "option1":"Bradley Cooper",
+        "option2":"Mark Ronson",
+        "option3":"Bruno Mars",
+        "option4":"Justin Timberlake",
+        "solution":"Bradley Cooper"
+    },
+    {
+        "id":130,
+        "content":"Which artist released the 2020 album 'After Hours,' featuring the hit single 'Blinding Lights'?",
+        "option1":"Drake",
+        "option2":"The Weeknd",
+        "option3":"Khalid",
+        "option4":"Post Malone",
+        "solution":"The Weeknd"
+    },
+    {
+        "id":131,
+        "content":"In 2014, which song by Pharrell Williams became widely popular for its cheerful theme?",
+        "option1":"Get Lucky",
+        "option2":"Blurred Lines",
+        "option3":"Happy",
+        "option4":"Freedom",
+        "solution":"Happy"
+    },
+    {
+        "id":132,
+        "content":"Which rapper had a hit in 2018 with the song 'SICKO MODE'?",
+        "option1":"Travis Scott",
+        "option2":"Drake",
+        "option3":"Kanye West",
+        "option4":"Post Malone",
+        "solution":"Travis Scott"
+    },
+    {
+        "id":133,
+        "content":"What is the name of the debut single that launched Cardi B to fame in 2017?",
+        "option1":"I Like It",
+        "option2":"Money",
+        "option3":"Bodak Yellow",
+        "option4":"WAP",
+        "solution":"Bodak Yellow"
+    },
+    {
+        "id":134,
+        "content":"Which band released the album 'AM' in 2013, featuring the hit song 'Do I Wanna Know?'",
+        "option1":"Tame Impala",
+        "option2":"Arctic Monkeys",
+        "option3":"The Strokes",
+        "option4":"Kings of Leon",
+        "solution":"Arctic Monkeys"
+    },
+    {
+        "id":135,
+        "content":"Who collaborated with Rihanna on the 2010 hit 'Love the Way You Lie'?",
+        "option1":"Drake",
+        "option2":"Jay-Z",
+        "option3":"Eminem",
+        "option4":"Kanye West",
+        "solution":"Eminem"
+    },
+    {
+        "id":136,
+        "content":"Which rapper's 2021 album 'Certified Lover Boy' broke Spotify records on its first day?",
+        "option1":"Drake",
+        "option2":"J. Cole",
+        "option3":"Kanye West",
+        "option4":"Lil Wayne",
+        "solution":"Drake"
+    },
+    {
+        "id":137,
+        "content":"What is the name of BTS's first all-English single that topped the charts worldwide?",
+        "option1":"Butter",
+        "option2":"Boy With Luv",
+        "option3":"Dynamite",
+        "option4":"Permission to Dance",
+        "solution":"Dynamite"
+    },
+    {
+        "id":138,
+        "content":"What is the name of the song by Childish Gambino that won the Best Traditional R&B Performance award at the Grammys?",
+        "option1":"Feels Like Summer",
+        "option2":"This Is America",
+        "option3":"Redbone",
+        "option4":"Sober",
+        "solution":"Redbone"
+    },
+    {
+        "id":139,
+        "content":"Which rapper released the hit 'Hotline Bling' in 2015?",
+        "option1":"Kanye West",
+        "option2":"J. Cole",
+        "option3":"Drake",
+        "option4":"Travis Scott",
+        "solution":"Drake"
+    },
+    {
+        "id":140,
+        "content":"Which K-pop group made history as the first to perform at the Grammy Awards in 2019?",
+        "option1":"Blackpink",
+        "option2":"BTS",
+        "option3":"EXO",
+        "option4":"Twice",
+        "solution":"BTS"
+    },
+    {
+        "id":141,
+        "content":"Who released the 2019 song 'Bad Guy,' which went on to win Record of the Year at the Grammys?",
+        "option1":"Ariana Grande",
+        "option2":"Billie Eilish",
+        "option3":"Dua Lipa",
+        "option4":"Halsey",
+        "solution":"Billie Eilish"
+    },
+    {
+        "id":142,
+        "content":"Wheres that lyric from? 'Just a small-town girl, living in a lonely world'",
+        "option1":"Don't Stop Believin' - Journey",
+        "option2":"Eye of the Tiger - Survivor",
+        "option3":"Sweet Child O' Mine - Guns N' Roses",
+        "option4":"Livin' on a Prayer - Bon Jovi",
+        "solution":"Don't Stop Believin' - Journey"
+    },
+    {
+        "id":143,
+        "content":"Wheres that lyric from? 'I see a little silhouetto of a man, Scaramouche, Scaramouche, will you do the Fandango?'",
+        "option1":"We Will Rock You - Queen",
+        "option2":"Don't Stop Me Now - Queen",
+        "option3":"Bohemian Rhapsody - Queen",
+        "option4":"Radio Ga Ga - Queen",
+        "solution":"Bohemian Rhapsody - Queen"
+    },
+    {
+        "id":144,
+        "content":"Wheres that lyric from? 'I stay up too late, got nothing in my brain, that’s what people say'",
+        "option1":"Shake It Off - Taylor Swift",
+        "option2":"Blank Space - Taylor Swift",
+        "option3":"22 - Taylor Swift",
+        "option4":"You Belong With Me - Taylor Swift",
+        "solution":"Shake It Off - Taylor Swift"
+    },
+    {
+        "id":145,
+        "content":"Wheres that lyric from? 'I've got sunshine on a cloudy day, when it's cold outside, I've got the month of May'",
+        "option1":"My Girl - The Temptations",
+        "option2":"Ain't Too Proud to Beg - The Temptations",
+        "option3":"Stand by Me - Ben E. King",
+        "option4":"I Heard It Through the Grapevine - Marvin Gaye",
+        "solution":"My Girl - The Temptations"
+    },
+    {
+        "id":146,
+        "content":"Wheres that lyric from? 'Tequila!'",
+        "option1":"Tequila - The Champs",
+        "option2":"Wipeout - The Surfaris",
+        "option3":"Misirlou - Dick Dale",
+        "option4":"Mambo No. 5 - Perez Prado",
+        "solution":"My Girl - The Temptations"
+    },
+    {
+        "id":147,
+        "content":"Which artist’s album, YHLQMDLG, became one of the best-selling reggaeton albums in 2020?",
+        "option1":"J Balvin",
+        "option2":"Bad Bunny",
+        "option3":"Daddy Yankee",
+        "option4":"Ozuna",
+        "solution":"Bad Bunny"
+    },
+    {
+        "id":148,
+        "content":"Which song by Daddy Yankee is often credited with popularizing reggaeton globally?",
+        "option1":"Gasolina",
+        "option2":"Dura",
+        "option3":"Rompe",
+        "option4":"Despacito",
+        "solution":"Gasolina"
+    },
+    {
+        "id":149,
+        "content":"Which band had a hit with the 2004 song 'Boulevard of Broken Dreams'?",
+        "option1":"Fall Out Boy",
+        "option2":"Linkin Park",
+        "option3":"Green Day",
+        "option4":"The All-American Rejects",
+        "solution":"Green Day"
+    },
+    {
+        "id":150,
+        "content":"Which artist is known for popularizing the corridos tumbados genre?",
+        "option1":"Peso Pluma",
+        "option2":"Natanael Cano",
+        "option3":"Los Tigres del Norte",
+        "option4":"Chalino Sánchez",
+        "solution":"Natanael Cano"
+    },
+    {
+        "id":151,
+        "content":"Which band had a featured song in the 2007 film, Transformers?",
+        "option1":"Thirt Seconds To Mars",
+        "option2":"Linkin Park",
+        "option3":"Green Day",
+        "option4":"Foo Fighters",
+        "solution":"Linkin Park"
+    },
+    {
+        "id":152,
+        "content":"Which artist composed the soundtrack for the 2010 film, Tron: Legacy?",
+        "option1":"Nine Inch Nails",
+        "option2":"Thirt Seconds To Mars",
+        "option3":"Ludwig Goransson",
+        "option4":"Daft Punk",
+        "solution":"Daft Punk"
+    },
+    {
+        "id":153,
+        "content":"Which artist produced the soundtrack for the 2023 film, Spider-Man: Across the Spider-Verse?",
+        "option1":"Metro Boomin",
+        "option2":"Kendrick Lamar",
+        "option3":"Post Malone",
+        "option4":"DJ Khalid",
+        "solution":"Metro Boomin"
+    },
+    {
+        "id":154,
+        "content":"Which artist produced the soundtrack for the 2014 film, Interstellar?",
+        "option1":"Ludwig Goransson",
+        "option2":"John Williams",
+        "option3":"Danny Elfman",
+        "option4":"Hans Zimmer",
+        "solution":"Metro Boomin"
+    },
+    {
+        "id":155,
+        "content":"Which band had a hit with the 2015 song 'Stressed Out'?",
+        "option1":"Panic! At The Disco",
+        "option2":"Twenty One Pilots",
+        "option3":"Fall Out Boy",
+        "option4":"Cage The Elephant",
+        "solution":"Twenty One Pilots"
+    },
+    {
+        "id":156,
+        "content":"Wheres that lyric from? 'I ain't happy, I'm feeling glad, I got sunshine in a bag'",
+        "option1":"Ain't No Rest For The Wicked - Cage The Elephant",
+        "option2":"Reptilia - The Strokes",
+        "option3":"Clint Eastwood - Gorillaz",
+        "option4":"R U Mine? - Arctic Monkeys",
+        "solution":"Clint Eastwood - Gorillaz"
+    },
+    {
+        "id":157,
+        "content":"Wheres that lyric from? ''",
+        "option1":"Ain't No Rest For The Wicked - Cage The Elephant",
+        "option2":"Reptilia - The Strokes",
+        "option3":"Clint Eastwood - Gorillaz",
+        "option4":"R U Mine? - Arctic Monkeys",
+        "solution":"Clint Eastwood - Gorillaz"
+    },
+    {
+        "id":158,
+        "content":"What is the name of the debut album by Olivia Rodrigo, featuring the hit single 'Driver’s License'?",
+        "option1":"Good 4 U",
+        "option2":"SOUR",
+        "option3":"GUTS",
+        "option4":"Bitter Sweet",
+        "solution":"SOUR"
+    },
+    {
+        "id":159,
+        "content":"Which Colombian artist is known for hit songs like 'Hips Don’t Lie' and 'Waka Waka'?",
+        "option1":"Shakira",
+        "option2":"Karol G",
+        "option3":"J Balvin",
+        "option4":"Maluma",
+        "solution":"Shakira"
+    },
+    {
+        "id":160,
+        "content":"Who is the Puerto Rican artist behind the hit 2023 single 'MONACO'?",
+        "option1":"Bad Bunny",
+        "option2":"Ozuna",
+        "option3":"Daddy Yankee",
+        "option4":"Anuel AA",
+        "solution":"Bad Bunny"
     }
 ]
