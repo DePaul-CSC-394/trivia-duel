@@ -135,6 +135,7 @@ function questionCountdown() {
         if (countdown < 0) {
             clearInterval(countdownInterval);
             loadNewQuestion();
+            playSkipSoundEffect();
         }
     }, 1000);
 }
@@ -213,6 +214,7 @@ function loadNewQuestion() {
 }
 
 function skipQuestion(){
+    playButtonClickEffect();
     document.getElementById('result').textContent = 'Question skipped!';
     document.getElementById('countdown').textContent = '';
     document.getElementById('steal').textContent = '';
@@ -258,6 +260,14 @@ function playCorrectAnswerSoundEffect() {
 function playWrongAnswerSoundEffect() {
     const wrongSound = new Audio('/assets/negative_beeps-6008.mp3');
     wrongSound.play();
+}
+function playSkipSoundEffect() {
+    const skipSound = new Audio('/assets/fast-whoosh-118248.mp3');
+    skipSound.play();
+}
+function playButtonClickEffect() {
+    const buttonSound = new Audio('/assets/8-bit.mp3');
+    buttonSound.play();
 }
 
 
