@@ -1,0 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const start_game_button = document.getElementById("start_game_button");
+    const button_effect = new Audio("/assets/8-bit.mp3");
+    start_game_button.addEventListener("click", (event) => {
+        event.preventDefault();
+        button_effect.play().catch((error) => {
+            console.error("Error playing button sound effect:", error);
+        });
+        button_effect.onended = () => {
+            window.location.href='/settings';
+        };
+    });
+});

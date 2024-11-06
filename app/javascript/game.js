@@ -11,29 +11,13 @@ let shownQuestionIds = [];
 let player1Name = localStorage.getItem('player1Name') || 'Player 1';
 let player2Name = localStorage.getItem('player2Name') || 'Player 2';
 let pointsToWin = parseInt(localStorage.getItem('pointsToWin')) || 10;
+const new_game_button = document.getElementById("new-game-button");
+const new_game_effect = new Audio('/assets/8-bit.mp3');
 
 function updateScoreDisplay() {
     document.getElementById('player1-score').textContent = player1Name + ': ' + player1Score;
     document.getElementById('player2-score').textContent = player2Name + ': ' + player2Score;
 }
-
-document.addEventListener('keydown', function(event) {
-    if (currentPlayer === null && (event.key === 'a' || event.key === 'A' || event.key === 'l' || event.key === 'L')) {
-        playBuzzerSoundEffect();
-        enableAnswerButtons();
-        if (event.key === 'a' || event.key === 'A') {
-            questionTimer()
-            currentPlayer = player1Name;
-            otherPlayer = player2Name;
-        } else if (event.key === 'l' || event.key === 'L') {
-            questionTimer()
-            currentPlayer = player2Name;
-            otherPlayer = player1Name;
-        }
-
-        document.getElementById('result').textContent = currentPlayer + ' buzzed in!';
-    }
-});
 
 function checkAnswer(selectedOption) {
     const correctAnswer = document.getElementById('correct-answer').value;
@@ -270,6 +254,47 @@ function playButtonClickEffect() {
     buttonSound.play();
 }
 
+function enableAnswerButtons() {
+    document.querySelectorAll('.option-button').forEach(button => {
+        button.disabled = false;
+    });
+    document.getElementById('skip-button').disabled = false;
+}
+
+function disableAnswerButtons() {
+    document.querySelectorAll('.option-button').forEach(button => {
+        button.disabled = true;
+    });
+    document.getElementById('skip-button').disabled = true;
+}
+
+new_game_button.addEventListener("click", (event) => {
+    event.preventDefault();
+    new_game_effect.play().catch((error) => {
+        console.error("Error playing button sound effect:", error);
+    });
+    new_game_effect.onended = () => {
+        window.location.href='/settings';
+    };
+});
+
+document.addEventListener('keydown', function(event) {
+    if (currentPlayer === null && (event.key === 'a' || event.key === 'A' || event.key === 'l' || event.key === 'L')) {
+        playBuzzerSoundEffect();
+        enableAnswerButtons();
+        if (event.key === 'a' || event.key === 'A') {
+            questionTimer()
+            currentPlayer = player1Name;
+            otherPlayer = player2Name;
+        } else if (event.key === 'l' || event.key === 'L') {
+            questionTimer()
+            currentPlayer = player2Name;
+            otherPlayer = player1Name;
+        }
+
+        document.getElementById('result').textContent = currentPlayer + ' buzzed in!';
+    }
+});
 
 document.querySelectorAll('.option-button').forEach(button => {
     button.addEventListener('click', function() {
@@ -279,20 +304,6 @@ document.querySelectorAll('.option-button').forEach(button => {
         }
     });
 });
-
-function disableAnswerButtons() {
-    document.querySelectorAll('.option-button').forEach(button => {
-        button.disabled = true;
-    });
-    document.getElementById('skip-button').disabled = true;
-}
-
-function enableAnswerButtons() {
-    document.querySelectorAll('.option-button').forEach(button => {
-        button.disabled = false;
-    });
-    document.getElementById('skip-button').disabled = false;
-}
 
 startNewGame();
 updateScoreDisplay();
