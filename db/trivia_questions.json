@@ -1735,5 +1735,77 @@
         "option3":"Story of My Life",
         "option4":"Best Song Ever",
         "solution":"What Makes You Beautiful"
+    },
+    {
+        "id":193,
+        "content":"What is Kid Cudi’s breakout single from 2008 that brought him mainstream attention?",
+        "option1":"Pursuit of Happiness",
+        "option2":"Erase Me",
+        "option3":"Day 'n' Nite",
+        "option4":"Mr. Rager",
+        "solution":"Day 'n' Nite"
+    },
+    {
+        "id":194,
+        "content":"What is the title of The White Stripes' iconic song, often chanted at sports events?",
+        "option1":"Blue Orchid",
+        "option2":"Fell in Love with a Girl",
+        "option3":"Seven Nation Army",
+        "option4":"Icky Thump",
+        "solution":"Seven Nation Army"
+    },
+    {
+        "id":195,
+        "content":"What is the title of J. Cole’s 2014 album, which includes the hit song 'No Role Modelz'?",
+        "option1":"Born Sinner",
+        "option2":"4 Your Eyez Only",
+        "option3":"2014 Forest Hills Drive",
+        "option4":"KOD",
+        "solution":"2014 Forest Hills Drive"
+    },
+    {
+        "id":196,
+        "content":"What is Franz Ferdinand’s breakout single from 2004 that became an international hit?",
+        "option1":"Take Me Out",
+        "option2":"Do You Want To",
+        "option3":"This Fire",
+        "option4":"Ulysses",
+        "solution":"Take Me Out"
+    },
+    {
+        "id":197,
+        "content":"What is The Strokes breakout single from their 2001 albumn 'This Is It'?",
+        "option1":"Last Nite",
+        "option2":"Hard to Explain",
+        "option3":"12:51",
+        "option4":"Reptilia",
+        "solution":"Last Nite"
+    },
+    {
+        "id":198,
+        "content":"Which Metallica album features the iconic song 'Enter Sandman'?",
+        "option1":"Master of Puppets",
+        "option2":"Ride the Lighting",
+        "option3":"The Black Album",
+        "option4":"And Justice for All",
+        "solution":"The Black Album"
+    },
+    {
+        "id":199,
+        "content":"Which Linkin Park album features the hit single 'In the End'?",
+        "option1":"Minutes to Midnight",
+        "option2":"Hybrid Theory",
+        "option3":"A Thousand Suns",
+        "option4":"Meteora",
+        "solution":"Hybrid Theory"
+    },
+    {
+        "id":200,
+        "content":"Which Bee Gees song became a major hit in 1977, featured on the 'Saturday Night Fever' soundtrack?",
+        "option1":"Night Fever",
+        "option2":"To Love Somebody",
+        "option3":"How Deep Is Your Love",
+        "option4":"Stayin' Alive",
+        "solution":"Stayin' Alive"
     }
 ]
