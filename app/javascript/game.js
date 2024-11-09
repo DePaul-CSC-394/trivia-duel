@@ -62,6 +62,7 @@ function checkAnswer(selectedOption) {
                 }
             });
             if (answerAttempts < 2) {
+                document.getElementById('countdown').textContent = '';
                 setTimeout(() => {
                     optionButtons.forEach(button => {
                         button.classList.remove('wrong-answer');
@@ -69,6 +70,7 @@ function checkAnswer(selectedOption) {
                     stealQuestion();
                 }, 500);
             } else {
+                document.getElementById('steal').textContent = '';
                 optionButtons.forEach(button => {
                     if (button.getAttribute('data-answer') === correctAnswer) {
                         button.classList.add('correct-answer');
