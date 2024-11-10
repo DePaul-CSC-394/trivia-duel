@@ -89,6 +89,8 @@ function declareWinner(winner) {
     document.getElementById('steal').textContent = '';
     document.getElementById('result').textContent = winner + ' wins the game!';
     clearInterval(questionTimerInterval);
+    localStorage.setItem('winner', winner);
+    window.location.href = '/winner';
 }
 
 function stealQuestion() {

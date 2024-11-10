@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def countdown
   end
+
+  def winner
+  end
 end

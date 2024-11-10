@@ -1,0 +1,44 @@
+<head>
+    <%= stylesheet_link_tag 'winner', media: 'all' %>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="winner-page">
+        <div class="gif-background"></div>
+        <h1>Congratulations, <span id="winner-name"></span>!</h1>
+        <p>You have won the game!</p>
+        <button class="game-button" id="new-game-button">Start New Game</button>
+        <div id="confetti-container"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const winner = localStorage.getItem('winner');
+            document.getElementById('winner-name').textContent = winner || 'Player';
+            const winnerAudio = new Audio('/assets/cheering.mp3');
+            winnerAudio.play();
+
+            document.getElementById('new-game-button').addEventListener('click', () => {
+
+                const buttonClickAudio = new Audio('/assets/8-bit.mp3');
+                buttonClickAudio.play();
+
+
+                buttonClickAudio.addEventListener('ended', () => {
+                    startNewGame();
+                });
+            });
+        });
+
+        function startNewGame() {
+
+            localStorage.removeItem('player1Name');
+            localStorage.removeItem('player2Name');
+            localStorage.removeItem('pointsToWin');
+            window.location.href = '/settings';
+        }
+    </script>
+</body>
+
