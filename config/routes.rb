@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get "settings", to: "settings#index"
   get "countdown", to: "pages#countdown"
   get "questions/next", to: "questions#next"
-  get 'winner', to: 'pages#winner'
+  get "winner", to: "pages#winner"
 
   resources :games, only: [ :show ]
 
