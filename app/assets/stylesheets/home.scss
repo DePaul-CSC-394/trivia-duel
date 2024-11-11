@@ -58,7 +58,16 @@ body, html {
       font-family: 'Press Start 2P';
       font-size: 1rem;
       margin: 10px 0;
+      border-radius: 3px;
+      box-shadow: 4px 4px 0 #000;
       cursor: pointer;
+  }
+  button:hover{
+    background-color: rgb(103, 119, 135);
+    color: yellow;
+  }
+  button:active{
+    color: red;
   }
   .instructions {
       max-width: 80%;
@@ -71,7 +80,22 @@ body, html {
       line-height: 1.5;
   }
 }
-
+.name_inputs {
+  background-color: white;
+  border-radius: 3px;
+  border-color: lightslategray;
+  text-align: center;
+  color:lightslategray;
+  font-family: 'Press Start 2P';
+}
+#points-to-win {
+  background-color: white;
+  border-radius: 3px;
+  border-color: lightslategray;
+  text-align: center;
+  color:lightslategray;
+  font-family: 'Press Start 2P';
+}
 .countdown-page {
   justify-content: center;
 

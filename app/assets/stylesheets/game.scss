@@ -18,6 +18,7 @@ body, html {
         color: white;
         height: 70px;
         margin: 20px;
+        border-radius: 3px;
         cursor: pointer;
     }
 }
@@ -78,6 +79,7 @@ body, html {
     font-size: 1rem;
     cursor: pointer;
     border: none;
+    border-radius: 3px;
     transition: background-color 0.3s;
 }
 
@@ -137,6 +139,7 @@ body, html {
     font-family: 'VT323';
     font-size: 2rem;
     letter-spacing: 0.1em;
+    border-radius: 3px;
     text-align: center;
 }
 
