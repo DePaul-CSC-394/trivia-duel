@@ -11,6 +11,9 @@ let shownQuestionIds = [];
 let player1Name = localStorage.getItem('player1Name') || 'Player 1';
 let player2Name = localStorage.getItem('player2Name') || 'Player 2';
 let pointsToWin = parseInt(localStorage.getItem('pointsToWin')) || 10;
+const player1Color = '#fa1844';
+const player2Color = '#21cc28';
+const defaultBoxColor = '#ffffff';
 const new_game_button = document.getElementById("new-game-button");
 const new_game_effect = new Audio('/assets/8-bit.mp3');
 
@@ -48,6 +51,7 @@ function checkAnswer(selectedOption) {
                 declareWinner(currentPlayer);
             } else {
                 disableAnswerButtons();
+                resetPlayerBoxColors();
                 questionCountdown();
             }
         } else {
@@ -76,6 +80,7 @@ function checkAnswer(selectedOption) {
                         button.classList.add('correct-answer');
                     }
                 });
+                resetPlayerBoxColors();
                 questionCountdown();
             }
         }
@@ -98,6 +103,7 @@ function stealQuestion() {
         chanceToSteal = true;
         document.getElementById('steal').textContent = otherPlayer + ' can steal!';
         [currentPlayer, otherPlayer] = [otherPlayer, currentPlayer];
+        updatePlayerBoxColor(currentPlayer);
         isAnswered = false;
         enableAnswerButtons();
         questionTimer();
@@ -154,6 +160,7 @@ function resetRound() {
     document.getElementById('countdown').textContent = '';
     document.getElementById('steal').textContent = '';
 
+    resetPlayerBoxColors();
     clearInterval(questionTimerInterval);
     currentPlayer = null;
     otherPlayer = null;
@@ -208,6 +215,7 @@ function skipQuestion(){
     document.getElementById('steal').textContent = '';
     clearInterval(questionTimerInterval);
     disableAnswerButtons();
+    resetPlayerBoxColors();
     questionCountdown();
 }
 
@@ -224,6 +232,7 @@ function startNewGame() {
     chanceToSteal = false;
     answerAttempts = 0;
     shownQuestionIds = [];
+    resetPlayerBoxColors();
     clearInterval(questionTimerInterval);
 
     document.getElementById('result').textContent = '';
@@ -295,7 +304,7 @@ document.addEventListener('keydown', function(event) {
             currentPlayer = player2Name;
             otherPlayer = player1Name;
         }
-
+        updatePlayerBoxColor(currentPlayer);
         document.getElementById('result').textContent = currentPlayer + ' buzzed in!';
     }
 });
@@ -308,6 +317,21 @@ document.querySelectorAll('.option-button').forEach(button => {
         }
     });
 });
+
+function updatePlayerBoxColor(player) {
+    if (player === player1Name) {
+        document.getElementById('player1-score').style.backgroundColor = player1Color;
+        document.getElementById('player2-score').style.backgroundColor = defaultBoxColor;
+    } else if (player === player2Name) {
+        document.getElementById('player2-score').style.backgroundColor = player2Color;
+        document.getElementById('player1-score').style.backgroundColor = defaultBoxColor;
+    }
+}
+
+function resetPlayerBoxColors() {
+    document.getElementById('player1-score').style.backgroundColor = defaultBoxColor;
+    document.getElementById('player2-score').style.backgroundColor = defaultBoxColor;
+}
 
 startNewGame();
 updateScoreDisplay();
