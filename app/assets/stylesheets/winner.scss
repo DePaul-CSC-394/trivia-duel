@@ -83,6 +83,15 @@ h1, p, button {
     font-family: 'Press Start 2P';
     font-size: 1rem;
     margin: 10px 0;
+    border-radius: 3px;
+    box-shadow: 4px 4px 0 #000;
     cursor: pointer;
+}
+.game-button:hover {
+    background-color: rgb(103, 119, 135);
+    color: yellow;
+}
+.game-button:active {
+    color: red;
 }
 

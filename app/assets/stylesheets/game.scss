@@ -2,26 +2,88 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: rgb(3, 3, 95);
+    height: 100%;
     overflow: hidden;
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .top-section{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     background-color: rgb(3, 3, 95);
-
-    .manage-game-buttons{
-        background-color: lightslategray;
-        font-family: 'Press Start 2P';
-        font-size: 1rem;
-        color: white;
-        height: 70px;
-        margin: 20px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
 }
+.game-container {
+    display: flex;
+    flex: 1;
+}
+.sections {
+    flex: 1;
+    text-align: center;
+}
+#player1-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+#player2-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+#game-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#question {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'VT323';
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+}
+.buzz-in-text-player1, .buzz-in-text-player2 {
+    color: white;
+    font-family: 'VT323';
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+.manage-game-buttons{
+    background-color: lightslategray;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    color: white;
+    height: 70px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 0 #000;
+    cursor: pointer;
+}
+
+.manage-game-buttons:hover {
+    background-color: rgb(103, 119, 135);
+    color: yellow;
+}
+
+.manage-game-buttons:active {
+    color: red;
+}
+
 .game-page {
     display: flex;
     flex-direction: column;
@@ -33,6 +95,7 @@ body, html {
     padding: 0;
 
     h2 {
+        padding-top: 50px;
         margin-top: 100px;
         margin-left: 300px;
         margin-right: 300px;
@@ -108,7 +171,7 @@ body, html {
 }
 
 .game-messages{
-    min-height: 40px;
+    min-height: 20px;
     width: 100%;
     gap: 5px;
     text-align: center;
@@ -119,16 +182,6 @@ body, html {
     font-size: 1.8rem;
     letter-spacing: 0.1em;
     font-weight: bold;
-}
-
-.bottom-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
 }
 
 .playerBox {
@@ -145,10 +198,12 @@ body, html {
 
 .player1 {
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .player2 {
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .manage-game-buttons:disabled {
@@ -160,7 +215,7 @@ body, html {
 .buzz-in-text-player1 {
     margin-top: 5px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
     margin-left: 6px;
     padding-left: 15px;
 }
@@ -169,6 +224,6 @@ body, html {
     margin-top: 5px;
     text-align: center;
     margin-right: 16px;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
     padding-left: 15px;
 }

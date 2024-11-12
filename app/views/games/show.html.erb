@@ -6,52 +6,50 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="container">
   <div class="top-section">
     <button class="manage-game-buttons" id="new-game-button">New Game</button>
   </div>
-
   <div class="gameplay game-messages">
-    <div id="result"></div>
-    <div id="steal"></div>
-    <div id="countdown"></div>
+      <div id="result"></div>
+      <div id="steal"></div>
+      <div id="countdown"></div>
   </div>
-
-  <div class="game-page">
-    <h2><%= @question.content %></h2>
-    <div class="options">
-      <div class="option-row">
-        <button class="option-button" data-answer="<%= @question.option1 %>">A. <%= @question.option1 %></button>
-        <button class="option-button" data-answer="<%= @question.option2 %>">B. <%= @question.option2 %></button>
-      </div>
-      <div class="option-row">
-        <button class="option-button" data-answer="<%= @question.option3 %>">C. <%= @question.option3 %></button>
-        <button class="option-button" data-answer="<%= @question.option4 %>">D. <%= @question.option4 %></button>
-      </div>
-    </div>
-
-    <div class="top-section">
-      <button class="manage-game-buttons" id="skip-button" onclick="skipQuestion()">Skip Question</button>
-    </div>
-
-    <div class="bottom-section">
+  <div class="game-container"> 
+    <div class="sections" id="player1-section">
+      <%= image_tag "p1.png", class: "image-class", style: "width:315px;height:auto" %>
       <p class="buzz-in-text-player1">Press "A" to buzz in</p>
-      <p class="buzz-in-text-player2">Press "L" to buzz in</p>
-    </div>
-
-    <div class="bottom-section">
       <div class="playerBox player1" id="player1-score">
-        Player 1 Score: 0
+          Player 1 Score: 0
+        </div>
+    </div>
+    <div class="sections" id="game-content"> 
+      <h2 id="question"><%= @question.content %></h2>
+      <div class="options">
+        <div class="option-row">
+          <button class="option-button" data-answer="<%= @question.option1 %>">A. <%= @question.option1 %></button>
+          <button class="option-button" data-answer="<%= @question.option2 %>">B. <%= @question.option2 %></button>
+        </div>
+        <div class="option-row">
+          <button class="option-button" data-answer="<%= @question.option3 %>">C. <%= @question.option3 %></button>
+          <button class="option-button" data-answer="<%= @question.option4 %>">D. <%= @question.option4 %></button>
+        </div>
       </div>
-      <div class="playerBox player2" id="player2-score">
-        Player 2 Score: 0
+      <div class="top-section">
+        <button class="manage-game-buttons" id="skip-button" onclick="skipQuestion()">Skip Question</button>
       </div>
     </div>
-
- 
-
-    <input type="hidden" id="correct-answer" value="<%= @question.solution %>">
-    <%= javascript_include_tag 'game' %>
+    <div class="sections" id="player2-section">
+      <%= image_tag "p2.png", class: "image-class", style: "width:315px;height:auto" %>
+      <p class="buzz-in-text-player2">Press "L" to buzz in</p>
+      <div class="playerBox player2" id="player2-score">
+          Player 2 Score: 0
+        </div>
+    </div>
   </div>
+  <input type="hidden" id="correct-answer" value="<%= @question.solution %>">
+  <%= javascript_include_tag 'game' %>
+</div>
 </body>
 </html>
 

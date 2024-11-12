@@ -238,7 +238,7 @@ function startNewGame() {
 }
 
 function playBuzzerSoundEffect() {
-    const buzzer = new Audio('/assets/bellding-254774.mp3');
+    const buzzer = new Audio('/assets/retro-buzz.mp3');
     buzzer.play();
 }
 function playCorrectAnswerSoundEffect() {
@@ -246,11 +246,11 @@ function playCorrectAnswerSoundEffect() {
     correctSound.play();
 }
 function playWrongAnswerSoundEffect() {
-    const wrongSound = new Audio('/assets/negative_beeps-6008.mp3');
+    const wrongSound = new Audio('/assets/8-bit-wrong.mp3');
     wrongSound.play();
 }
 function playSkipSoundEffect() {
-    const skipSound = new Audio('/assets/fast-whoosh-118248.mp3');
+    const skipSound = new Audio('/assets/8-bit-skip.mp3');
     skipSound.play();
 }
 function playButtonClickEffect() {
