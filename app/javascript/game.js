@@ -11,14 +11,11 @@ let shownQuestionIds = [];
 let player1Name = localStorage.getItem('player1Name') || 'Player 1';
 let player2Name = localStorage.getItem('player2Name') || 'Player 2';
 let pointsToWin = parseInt(localStorage.getItem('pointsToWin')) || 10;
-<<<<<<< HEAD
 const player1Color = '#fa1844';
 const player2Color = '#21cc28';
 const defaultBoxColor = '#ffffff';
-=======
 let p1sad = null;
 let p2sad = null;
->>>>>>> bad7dfd (implemented player reactions/modified title of home)
 const new_game_button = document.getElementById("new-game-button");
 const new_game_effect = new Audio('/assets/8-bit.mp3');
 
