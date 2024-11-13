@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: rgb(3, 3, 95);
-    overflow: hidden;
 }
 
 .winner-page {
@@ -11,10 +10,10 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     text-align: center;
     background-color: rgb(3, 3, 95);
     color: white;
-    position: relative;
     overflow: hidden;
     z-index: 2;
 }
@@ -71,7 +70,7 @@ h1, p, button {
     }
 }
 
-.game-button {
+.winner-page .game-button {
     display: flex;
     flex-direction: column;
     align-items: center;
