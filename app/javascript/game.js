@@ -11,9 +11,14 @@ let shownQuestionIds = [];
 let player1Name = localStorage.getItem('player1Name') || 'Player 1';
 let player2Name = localStorage.getItem('player2Name') || 'Player 2';
 let pointsToWin = parseInt(localStorage.getItem('pointsToWin')) || 10;
+<<<<<<< HEAD
 const player1Color = '#fa1844';
 const player2Color = '#21cc28';
 const defaultBoxColor = '#ffffff';
+=======
+let p1sad = null;
+let p2sad = null;
+>>>>>>> bad7dfd (implemented player reactions/modified title of home)
 const new_game_button = document.getElementById("new-game-button");
 const new_game_effect = new Audio('/assets/8-bit.mp3');
 
@@ -36,8 +41,12 @@ function checkAnswer(selectedOption) {
 
             if (currentPlayer === player1Name) {
                 player1Score++;
+                changePlayerIcon(1, 2);
+                changePlayerIcon(2, 4);
             } else if (currentPlayer === player2Name) {
                 player2Score++;
+                changePlayerIcon(2, 2);
+                changePlayerIcon(1, 4);
             }
 
             updateScoreDisplay();
@@ -55,6 +64,11 @@ function checkAnswer(selectedOption) {
                 questionCountdown();
             }
         } else {
+            if (currentPlayer == player1Name) {
+                changePlayerIcon(1,4);
+            } else {
+                changePlayerIcon(2,4);
+            }
             playWrongAnswerSoundEffect();
             document.getElementById('result').textContent = currentPlayer + ' answered incorrectly!';
             answerAttempts++;
@@ -139,6 +153,12 @@ function questionTimer() {
     let countdown = 10;
     document.getElementById('countdown').textContent = '';
     questionTimerInterval = setInterval(() => {
+        if (!p1sad){
+            changePlayerIcon(1, 3);
+        }
+        if (!p2sad){
+            changePlayerIcon(2, 3);
+        }
         if (isAnswered) {
             clearInterval(questionTimerInterval);
             return;
@@ -146,6 +166,11 @@ function questionTimer() {
         document.getElementById('countdown').textContent = countdown + " seconds left to answer...";
         countdown--;
         if (countdown < 0) {
+            if (currentPlayer === player1Name) {
+                changePlayerIcon(1, 4);
+            } else {
+                changePlayerIcon(2, 4);
+            }
             playWrongAnswerSoundEffect()
             clearInterval(questionTimerInterval);
             document.getElementById('result').textContent = currentPlayer + ' did not answer in time!';
@@ -171,6 +196,8 @@ function resetRound() {
     document.querySelectorAll('.option-button').forEach(button => {
         button.classList.remove('correct-answer', 'wrong-answer');
     });
+    changePlayerIcon(1, 1);
+    changePlayerIcon(2, 1);
 }
 
 function loadNewQuestion() {
@@ -210,6 +237,8 @@ function loadNewQuestion() {
 
 function skipQuestion(){
     playButtonClickEffect();
+    changePlayerIcon(1, 4);
+    changePlayerIcon(2, 4);
     document.getElementById('result').textContent = 'Question skipped!';
     document.getElementById('countdown').textContent = '';
     document.getElementById('steal').textContent = '';
@@ -234,6 +263,8 @@ function startNewGame() {
     shownQuestionIds = [];
     resetPlayerBoxColors();
     clearInterval(questionTimerInterval);
+    changePlayerIcon(1, 1);
+    changePlayerIcon(2, 1);
 
     document.getElementById('result').textContent = '';
     document.getElementById('countdown').textContent = '';
@@ -281,6 +312,35 @@ function disableAnswerButtons() {
     document.getElementById('skip-button').disabled = true;
 }
 
+function changePlayerIcon(player, state){
+    if (player === 1) {
+        const player1_icon = document.getElementById("p1-icon");
+        if(state === 1) {
+            player1_icon.src = "/assets/p1.png";
+        } else if (state === 2){
+            player1_icon.src = "/assets/p1excited.png";
+        } else if (state === 3){
+            player1_icon.src = "/assets/p1thinking.png";
+        } else if (state === 4){
+            player1_icon.src = "/assets/p1sad.png";
+            p1sad = true;
+        }
+    }
+    if (player === 2){
+        const player2_icon = document.getElementById("p2-icon");
+        if(state === 1) {
+            player2_icon.src = "/assets/p2.png";
+        } else if (state === 2){
+            player2_icon.src = "/assets/p2excited.png";
+        } else if (state === 3){
+            player2_icon.src = "/assets/p2thinking.png";
+        } else if (state === 4){
+            player2_icon.src = "/assets/p2sad.png";
+            p2sad = true;
+        }
+    }
+}
+
 new_game_button.addEventListener("click", (event) => {
     event.preventDefault();
     new_game_effect.play().catch((error) => {
@@ -296,10 +356,14 @@ document.addEventListener('keydown', function(event) {
         playBuzzerSoundEffect();
         enableAnswerButtons();
         if (event.key === 'a' || event.key === 'A') {
+            changePlayerIcon(1, 2);
+            changePlayerIcon(2, 3);
             questionTimer()
             currentPlayer = player1Name;
             otherPlayer = player2Name;
         } else if (event.key === 'l' || event.key === 'L') {
+            changePlayerIcon(2, 2);
+            changePlayerIcon(1, 3);
             questionTimer()
             currentPlayer = player2Name;
             otherPlayer = player1Name;
