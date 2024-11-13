@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: rgb(3, 3, 95);
+    background-color: rgb(3, 3, 91);
     height: 100%;
     overflow: hidden;
 }
@@ -14,7 +14,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: rgb(3, 3, 95);
+    background-color: rgb(3, 3, 91);
 }
 .game-container {
     display: flex;
@@ -90,7 +90,7 @@ body, html {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-    background-color: rgb(3, 3, 95);
+    background-color: rgb(3, 3, 91);
     margin: 0;
     padding: 0;
 
@@ -166,7 +166,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(3, 3, 95);
+    background-color: rgb(3, 3, 91);
     min-height: 10px;
 }
 
@@ -188,7 +188,7 @@ body, html {
     width: 255px;
     padding: 30px;
     background-color: white;
-    color: rgb(3, 3, 95);
+    color: rgb(3, 3, 91);
     font-family: 'VT323';
     font-size: 2rem;
     letter-spacing: 0.1em;
