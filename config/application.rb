@@ -15,6 +15,9 @@ module Trivia
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
+    # Add a 16-byte key for session encryption
+    Rails.application.config.secret_key_base = SecureRandom.hex(16)  # 16 bytes
+
 
     # Configuration for the application, engines, and railties goes here.
     #
