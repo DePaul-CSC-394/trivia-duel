@@ -29,6 +29,6 @@ end
 gem "dotenv-rails", groups: [ :development, :test ]
 
 group :production do
-  gem 'puma', '~> 5.0'
+  gem 'puma', '~> 6.0'
   gem "pg"
 end
