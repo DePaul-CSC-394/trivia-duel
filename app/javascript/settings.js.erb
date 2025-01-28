@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const start_button = document.getElementById("start_button");
     const back_button = document.getElementById("back_button");
-    const button_effect = new Audio("/assets/8-bit.mp3");
+    const button_effect = new Audio("<%= asset_path('8-bit.mp3') %>");
 
     function startGame() {
         console.log("Start Game button clicked");

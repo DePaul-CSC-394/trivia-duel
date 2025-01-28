@@ -14,7 +14,7 @@
             let countdown = 3;
             const countdownElement = document.getElementById('countdown');
 
-            const countdownAudio = new Audio('/assets/arcade-countdown.mp3');
+            const countdownAudio = new Audio("<%= asset_path('arcade-countdown.mp3') %>");
             countdownAudio.play();
 
             countdownElement.textContent = countdown;
