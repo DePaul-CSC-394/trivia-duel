@@ -17,12 +17,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             const winner = localStorage.getItem('winner');
             document.getElementById('winner-name').textContent = winner || 'Player';
-            const winnerAudio = new Audio('/assets/cheering.mp3');
+            const winnerAudio = new Audio("<%= asset_path('cheering.mp3') %>");
             winnerAudio.play();
 
             document.getElementById('new-game-button').addEventListener('click', () => {
 
-                const buttonClickAudio = new Audio('/assets/8-bit.mp3');
+                const buttonClickAudio = new Audio("<%= asset_path('8-bit.mp3') %>");
                 buttonClickAudio.play();
 
 
