@@ -17,7 +17,7 @@ const defaultBoxColor = '#ffffff';
 let p1sad = null;
 let p2sad = null;
 const new_game_button = document.getElementById("new-game-button");
-const new_game_effect = new Audio('/assets/8-bit.mp3');
+const new_game_effect = new Audio("<%= asset_path('8-bit.mp3') %>");
 
 function updateScoreDisplay() {
     document.getElementById('player1-score').textContent = player1Name + ': ' + player1Score;
@@ -275,23 +275,23 @@ function startNewGame() {
 }
 
 function playBuzzerSoundEffect() {
-    const buzzer = new Audio('/assets/retro-buzz.mp3');
+    const buzzer = new Audio("<%= asset_path('retro-buzz.mp3') %>")
     buzzer.play();
 }
 function playCorrectAnswerSoundEffect() {
-    const correctSound = new Audio('/assets/chime.mp3');
+    const correctSound = new Audio("<%= asset_path('chime.mp3') %>");
     correctSound.play();
 }
 function playWrongAnswerSoundEffect() {
-    const wrongSound = new Audio('/assets/8-bit-wrong.mp3');
+    const wrongSound = new Audio("<%= asset_path('8-bit-wrong.mp3') %>");
     wrongSound.play();
 }
 function playSkipSoundEffect() {
-    const skipSound = new Audio('/assets/8-bit-skip.mp3');
+    const skipSound = new Audio("<%= asset_path('8-bit-skip.mp3') %>");
     skipSound.play();
 }
 function playButtonClickEffect() {
-    const buttonSound = new Audio('/assets/8-bit.mp3');
+    const buttonSound = new Audio("<%= asset_path('8-bit.mp3') %>");
     buttonSound.play();
 }
 
